@@ -1,0 +1,6 @@
+
+Count 1's : https://atcoder.jp/contests/arc137/tasks/arc137_b              ///Greedy
+
+Reduce to 1 : https://www.codechef.com/problems/RED1
+
+Geometric Mean Inequality : https://www.codechef.com/problems/GMINEQ
