@@ -1,1 +1,10 @@
 
+
+
+1. Water the Trees : https://codeforces.com/problemset/problem/1661/C
+
+2. Larger Score : https://atcoder.jp/contests/arc138/tasks/arc138_a
+
+3. Range Count Query : https://atcoder.jp/contests/abc248/tasks/abc248_d
+
+
