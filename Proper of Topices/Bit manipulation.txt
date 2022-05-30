@@ -1,0 +1,160 @@
+
+******** রাইট শিফট >> রাইট শিফট করলে কোন সংখ্যা অর্ধেক এ নেমে আসে অর্থাৎ রাইট শিফট এর মানে হলো কোন সংখ্যাকে ২ দ্বারা ভাগ দেওয়া।
+
+******** লেফট শিফট << লেফট শিফট করলে কোন সংখ্যা ২গুন হয়ে যায় লেফট রাইট শিফট এর মানে হলো কোন সংখ্যাকে ২ দ্বারা গুন দেওয়া।
+
+******** 2 দিয়ে ভাগ করা মানে হলো 0'তম বিট বাদ দেওয়া    (10/2)=5 (1010)->(101)
+
+******** ২ দিয়ে গুন করা মানে হলো 0'তম বিটে নতুন বিট যুক্ত হওয়া (10*2)=20 (1010)->(10100)
+
+******** MSB location বের করা,অর্থাৎ কোন ইন্টেজার ভ্যালুকে বিটে রিপ্রজেন্ট করলে এর সর্বডানের কত তম ইনডেক্স এ  1  আছে তা বের করা।
+          
+          int x=ceil(log2(value)); 1 base 
+            
+           --x; 0 base.   Here x will represents the index of MSB.
+           
+          Example: 7-> 0111 (here index 2nd is the MSB location)  
+          
+          Example: 10-> 1010 (here index 3rd is the MSB location) 
+          
+          related problem link: 1420B CF
+          
+        
+        
+********* Check particular bit set or not:    
+
+          for( int i=0 ; i<32 ; i++) {
+                    if((num & (1<<i)))  ///set
+           }
+           
+
+********* Binary to Integer convert :   
+
+        for(int i=0;i<string. size();i++){
+        
+                 num+=((s[i]-'0')*pow (2,i));
+                  
+         }
+         
+
+*********  Integer to Binary convert:
+        for(int i=31 ; i >=0;i--){
+        
+                 if((num & (1<<i))) s+=’1’ ; 
+                 else s+=’0’;
+        }
+        
+        
+        
+        
+******** Total XOR of all pair sum:
+
+We have to calculate the entire pair sum and then find all pair sum XOR. If we have an array 3,4,5,8 etc. So all pair sum XOR look like (3+3)^(3+4)^(3+5)^(3+8)^(4+3)^……
+If we calculate like that we need of O (n^2) complexity. But if we observe carefully then we can see that …..Represent all them in 2D Matrix.
+
+                    (3+3)=6	(3+4) =7	(3+5) =8	(3+8) =11
+                    (4+3) =7	(4+4) =8	(4+5) =9	(4+8) =12
+                    (5+3) =8	(5+4) =9	(5+5) =10	(5+8) =13
+                    (8+3) =11	(8+4) =12	(8+5) =13	(8+8) =16
+                    
+Except diagonal we have all the value twice. So from here we can tell that we just need that diagonal value which is twice of every elements of array. Now we can modify that 
+(2*3)^ (2*4) ^ (2*5) ^ (2*8) =ans. Time complexity O (n) .Space complexity O (1).
+
+
+
+******** Total Sum of all pair XOR:
+
+Firstly we have to calculate all the pair XOR and then find all pair XOR sum. If we have an array 3,4,5,8 etc. So all pair sum XOR look like (3^4)+(3^5)+(3^8)+(4^5)+(4^8)+(5^8).
+We just need to find how many bits are set and not set in i’th position.
+
+5=0101         3=0011         9=1001
+
+0th bit set have 3 and not set are 0                           1th bit set have 1 and not set are 2 
+
+2nd bit set have 1 and not set are 2                          3rd bit set have 1 and not set are 2 
+
+Formula is =(set bit*not set bit)*(2^bitposition)+……… So total sum of all pair XOR={(3*0)*(2^0)}+ {(1*2)*(2^1)}+ {(1*2)*(2^2)}+ {(1*2)*(2^3)}.
+
+Code:
+
+
+    int n,ans=0;   cin>>n;
+    for(int i=1;i<=n;i++)
+    {
+        int x;
+        cin>>x;
+        for(int j=0;j<32;j++) 
+             if(x&(1<<j)) 
+                 setbit[j]++;    
+     }
+    for(int i=0;i<32;i++)
+    {
+        int notset=n-setbit[i];  
+        ans+=(setbit[i]*notset)*pow(2,i);
+    }  
+    cout<<ans<<endl;
+
+
+
+******** Bitwise AND properties:
+
+২টি সংখ্যাকে বিটওয়াইজ এন্ড করলে যে সংখ্যা পাওয়া যাবে তা অবশ্যই ছোট যে সংখ্যাটি আছে তার চেয়ে ছোট বা তার সমান হবে।
+          Like: 
+          A=2   B=5 then (A&B) <=A, here A is smallest between A and B.
+
+
+******** Xor Properties:
+
+যেকোন সংখ্যা X দেওয়া আছে, এমন একটি  Xor পেয়ার বের করতে হবে যাদের মাল্টিপল বাকি সব পেয়ারগুলো থেকে ম্যাক্সিমাম হয়। 
+এক্ষেত্রে ১ টি সংখ্যাকে Y=01111..1  ধরলে বাকি সংখ্যা(Z) হবে  Xor of  (X^Y). 
+          Example: Interesting Xor codechef
+
+
+******** Find XOR from left to right on queries from an array:
+
+Ask to answer queries of the form L R (to find XOR of all elements of the array in this range).
+
+Property: we know that same element xor is zero.
+
+          First we need to create a prefix array of xor.
+
+          Prefix[i]=a[1]+a[2]+a[3]+…….a[i]. 
+
+          So we can xor prefix [l-1] from prefix[r]. That’s how we can remove the contribution of outside elements from the range.
+
+          So xor of [l, r] will be prefix[r] ^ prefix [l-1].
+
+
+
+******* একটা number এর ith বিট কতবার ইটারেশন এর পর শূন্য হবে ?
+        
+       int Pow=(1<<i);
+       
+       iteration=(Pow-1)-(number&(Pow-1))+1;
+      
+       Problem Link: https://www.codechef.com/problems/RGAND
+
+
+****** একটা এর‍্যের যতগুলো সংখ্যা আছে সবগুলো সংখ্যার যোগফল বের করতে হবে ,বিট ওয়াইজ অপারেশন এর মাধ্যমে,
+        
+       মনে করি সংখ্যা গুলোর 'i' তম বিট এ  '1' আছে 5 টি সংখ্যার মধ্যে, তবে ওই বিটের জন্য  যোগফল এর সহায়তা হবে = (5* pow (2,i));
+         
+       এভাবে সব বিটের জন্য সহায়তা বের করলে ,টোটাল যোগফল পাওয়া যাবে।   
+       
+       problem link : https://atcoder.jp/contests/arc135/tasks/arc135_c
+       
+      
+
+********************************** How many sequnce are there that satisfied the following conditions ****************
+
+   a1 & a2 & a3 & ........& an = 0  where [ai=2^m-1]
+   
+since we have total n numbers and every number has m bits. so for every bit there are 2 option (0/1) and thuse we have total 2^n sequence.
+since for a bit positions all number options should not be 1.So we need to substract 1.
+
+For 1 bit we have (2^n-1) subsequence.
+So for m bits there are total (2^n-1)^m subsequnce.     ///details in pdf of bitwise
+
+
+
+
