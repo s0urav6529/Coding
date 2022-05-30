@@ -1,0 +1,22 @@
+
+
+1. Mirror in the String: https://codeforces.com/problemset/problem/1616/B
+
+2. Convert Strings by Flips: https://www.codechef.com/START22B/problems/STRFLIP
+
+3. Peculiar Movie Preferences: https://codeforces.com/contest/1629/problem/D
+
+4. Minority: https://codeforces.com/contest/1633/problem/B   
+
+5. Anti Palindrome: https://www.codechef.com/START24B/problems/ANTI_PAL
+
+6. String Reverse: https://www.codechef.com/START27B/problems/STR_REVERSE
+
+7. Distinct Binary Strings: https://www.codechef.com/START27B/problems/BINSTRING
+
+8. Substring of a Substring : https://www.codechef.com/problems/SUBSTRING
+
+9. Broken Life : https://www.codechef.com/START33B/problems/BRKNLIFE
+
+
+
