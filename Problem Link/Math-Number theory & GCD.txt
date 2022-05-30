@@ -1,0 +1,127 @@
+
+
+Done
+
+1. Common Divisors:  https://codeforces.com/contest/1203/problem/C
+
+2. common Divisors: https://codeforces.com/problemset/problem/182/D
+
+3. Mike and gcd problem: https://codeforces.com/contest/798/problem/C
+
+4. Row Gcd: https://codeforces.com/problemset/problem/1458/A
+
+5. Coprime Triples: https://www.codechef.com/problems/COPRIME3
+
+6. Unit GCD: https://www.codechef.com/APRIL20B/problems/UNITGCD
+
+7. Round Corridor: https://codeforces.com/contest/1200/problem/C
+
+8. The hardest gcd problem: https://www.codechef.com/LTIME59A/problems/GCDDIV
+
+9. Modified GCD: https://codeforces.com/problemset/problem/75/C
+
+10. Weakened Common Divisor: https://codeforces.com/contest/1025/problem/B
+
+11. Short Task: https://codeforces.com/problemset/problem/1512/G
+
+12. Recover it!: https://codeforces.com/contest/1176/problem/D
+
+13. Coprime Set: https://atcoder.jp/contests/arc118/tasks/arc118_c
+
+14. Tree House: https://www.codechef.com/problems/THOUSES                                         ///tree base
+
+15. Sum of gcd of Tuples (Hard): https://atcoder.jp/contests/abc162/tasks/abc162_e               ///with dp
+
+16. Sum of gcd of Tuples (Easy): https://atcoder.jp/contests/abc162/tasks/abc162_c              ///with dp
+
+17. Chef and Divisors: https://www.codechef.com/problems/DIVISOR                               ///with dp
+
+18. Good Sequence: https://codeforces.com/problemset/problem/264/B                            ///with dp
+
+19. Prime Sum: https://www.hackerrank.com/challenges/prime-sum/problem                        ///goldbatch conjuture and farmet prime test
+
+20. Square Function: https://www.codechef.com/problems/SQUAREFU                               ///prime factorization + frequency set
+
+21. Array Elimination: https://codeforces.com/contest/1602/problem/C                         ///Bitwise And+GCD
+
+22. Sardar and GCD: https://www.codechef.com/problems/DLTNODE                                ///Tree+GCD
+
+23. Orac and LCM: https://codeforces.com/contest/1350/problem/C 
+
+24. Almost All Divisors: https://codeforces.com/problemset/problem/1165/D
+
+25. Zero Quantity Maximization: https://codeforces.com/problemset/problem/1133/D
+
+26. Paint the Array: https://codeforces.com/contest/1618/problem/C
+
+27. GCD Problem: https://codeforces.com/contest/1617/problem/B
+
+28. Paprika and Permutation: https://codeforces.com/contest/1617/problem/C
+
+29. Dalgona Treat : https://www.codechef.com/INFI21B/problems/DALGONA                         ///math
+
+30. Ddakji: https://www.codechef.com/INFI21B/problems/MSUM
+
+31. Maximum Factors Problem: https://www.codechef.com/problems/MXFACS
+
+32. Power Sum: https://www.codechef.com/JAN222B/problems/POWSUM
+
+33. Not Adding: https://codeforces.com/problemset/problem/1627/D
+
+34. Division by Two and Permutation: https://codeforces.com/problemset/problem/1624/C
+
+35. Array Filling: https://www.codechef.com/problems/ARRFILL                                  ///lcm
+
+36. Representative Edges: https://codeforces.com/problemset/problem/1616/C              ///logic of arithmetic progression    (problem for fraction value to not get accepted)
+
+37. GCD Arrays: https://codeforces.com/contest/1629/problem/B
+
+38. Subsegment Divisibility: https://www.codechef.com/problems/SEGDIV
+
+39. Kill the Monster: https://codeforces.com/contest/1633/problem/C                   /// Math simple
+
+40. Divisors and Reciprocals: https://www.codechef.com/START24B/problems/DIVREC       ///number theory
+
+41. Building Towers: https://www.codechef.com/START25B/problems/TOWERTOP
+
+42. Non Coprime Neighbours: https://www.codechef.com/START27B/problems/NCOPRIMEN            /// constructive algo           
+
+43. Coprime Pair: https://atcoder.jp/contests/arc137/tasks/arc137_a
+
+44. Polynomial division : https://atcoder.jp/contests/abc245/tasks/abc245_d                ///polynomial division
+
+45. Getting Zero : https://codeforces.com/problemset/problem/1661/B
+
+46. Secret Machine Mania : https://www.codechef.com/LTIME107B/problems/GCD_LCM              ///prime factorization concept
+
+47.  Z mod X = C : https://codeforces.com/problemset/problem/1684/B                       
+
+
+
+Undone:
+GCD Extreme: https://www.spoj.com/problems/GCDEX/
+Pairwise GCD: https://www.hackerearth.com/problem/algorithm/pairwise-gcd/
+
+SUM and REPLACE: https://codeforces.com/contest/920/problem/F
+
+Coprime Subsequences: https://codeforces.com/problemset/problem/803/F
+
+Petya and Divisors: https://codeforces.com/contest/112/problem/D
+
+Number With The Given Amount Of Divisors: https://codeforces.com/problemset/problem/27/E
+
+Count Pairs: https://codeforces.com/contest/1189/problem/E
+
+A Determined Cleanup: https://codeforces.com/contest/934/problem/D
+
+Chessboard Billiard: https://codeforces.com/contest/74/problem/C -(2100)
+
+Arpa and a list of numbers:  https://codeforces.com/contest/851/problem/D -(2100)
+
+Unusual Sequences:  https://codeforces.com/contest/900/problem/D- (2000)
+
+Vasya's Function:  https://codeforces.com/contest/837/problem/E -(2100)
+
+GCD Groups 2:  https://codeforces.com/contest/1198/problem/F -(2900)
+
+
