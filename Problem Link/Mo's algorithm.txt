@@ -1,0 +1,28 @@
+
+
+Mo's Without Update:
+
+
+Done:
+
+1. poweful array: https://codeforces.com/contest/86/problem/D
+2. Little Elephant and Array: https://codeforces.com/contest/220/problem/B
+3. Cut & sticks: https://codeforces.com/problemset/problem/1514/D
+4. Giveaway: https://www.spoj.com/problems/GIVEAWAY/
+
+Undone:
+
+1. Xor & fovourite number: https://codeforces.com/contest/617/problem/E
+2. Ann & books: https://codeforces.com/contest/877/problem/F
+3. Chef and Problems: https://www.codechef.com/problems/QCHEF
+4. Destiny: https://codeforces.com/contest/840/problem/D
+5. Holes: https://codeforces.com/contest/13/problem/E
+6. Till i collaps: https://codeforces.com/contest/786/problem/C
+
+
+MO's With update:
+
+1. Primitive Queries:  https://www.codechef.com/FEB17/problems/DISTNUM3
+2. Machine Learning:  https://codeforces.com/problemset/problem/940/F
+3. XXXXXXXX: https://www.spoj.com/problems/XXXXXXXX/
+
