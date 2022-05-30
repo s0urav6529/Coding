@@ -1,0 +1,7 @@
+
+
+
+1. ABC conjecture: https://atcoder.jp/contests/abc227/tasks/abc227_c
+youtube : https://www.youtube.com/watch?v=q9e7gu5Kj40
+
+2. Distinct Trio : https://atcoder.jp/contests/abc252/tasks/abc252_d
