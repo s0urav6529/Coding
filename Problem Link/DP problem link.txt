@@ -1,0 +1,85 @@
+
+
+Done:
+
+1. Chef and Good Subsequences: https://www.codechef.com/problems/GDSUB
+
+2. George and Job: https://codeforces.com/contest/467/problem/C
+
+3. Sum of gcd of Tuples (Hard): https://atcoder.jp/contests/abc162/tasks/abc162_e
+
+4. Sum of gcd of Tuples (Easy): https://atcoder.jp/contests/abc162/tasks/abc162_c
+
+5. Chef and Divisors: https://www.codechef.com/problems/DIVISOR  
+
+6. Good Sequence: https://codeforces.com/problemset/problem/264/B
+
+7. Sleeping Schedule: https://codeforces.com/contest/1324/problem/E
+
+8. Consecutive Subsequence: https://codeforces.com/contest/977/problem/F
+
+9. Flowers: https://codeforces.com/contest/474/problem/D                                                    ///DP+Combinatorics
+
+10. Another Problem on Strings: https://codeforces.com/problemset/problem/165/C                             ///Subtring with exactly k '1'
+
+11. XOR-pyramid: https://codeforces.com/problemset/problem/983/B                                            ///DP+range queries
+
+12. Complex Market Analysis: https://codeforces.com/contest/1609/problem/C
+
+13. Ayoub and Lost Array: https://codeforces.com/contest/1105/problem/C                                     ///DP+Combinatorics
+
+14. Sequence Matching : https://atcoder.jp/contests/abc185/tasks/abc185_e
+
+15. Roads in Berland: https://codeforces.com/problemset/problem/25/C                                        ///DP+floyedwarshal
+
+16. Minimal payments: https://atcoder.jp/contests/abc231/tasks/abc231_e
+
+17. Weak Takahashi: https://atcoder.jp/contests/abc232/tasks/abc232_d                                      ///easy
+
+18. Road Optimization: https://codeforces.com/problemset/problem/1625/C
+
+19. Merging Binary Strings : https://www.codechef.com/START22B/problems/MERGEBS
+
+20. Merged LIS: https://www.codechef.com/problems/MERGEDLIS                                              ///LIS
+
+21. Maximise the Minimum https://www.codechef.com/problems/MAXMINK                                       /// Best one
+
+22. Make Them Equal: https://codeforces.com/contest/1633/problem/D                                      /// 0/1 knacpsack + extra work
+
+23. Floor, Ceil - Decomposition: https://atcoder.jp/contests/arc135/tasks/arc135_a
+
+24. Jumping Takahashi : https://atcoder.jp/contests/abc240/tasks/abc240_c
+
+25. Return f(x): https://toph.co/arena?practice=622a0cb5d0ce82e5f896a935#!/p/6218e13c2c7f84e3462f848c
+
+26. Dice Sum : https://atcoder.jp/contests/abc248/tasks/abc248_c                                       ///DP+Combinatorics
+
+27. Palindrome Basis : https://codeforces.com/contest/1673/problem/C                                   ///DP+Combinatorics
+
+28. Subsequence-Numbers Divisible by 7 : https://www.codechef.com/problems/SUB7NUM
+
+29. Chef And Division : https://www.codechef.com/problems/CEFDIV
+
+
+
+Digit DP:
+
+1. Required Length : https://codeforces.com/problemset/problem/1681/D                               
+
+2. Boring numbers : https://codingcompetitions.withgoogle.com/kickstart/round/000000000019ff49/000000000043b0c6
+
+3. PR003004 - Digit Sum : https://www.spoj.com/problems/PR003004/
+
+4. Counting Numbers : https://cses.fi/problemset/task/2220/
+
+5. Classy Numbers : https://codeforces.com/problemset/problem/1036/C
+
+
+Range DP:
+
+1. Zuma: https://codeforces.com/contest/607/problem/B
+
+2. Clear the String: https://codeforces.com/contest/1132/problem/F
+
+                       
+
