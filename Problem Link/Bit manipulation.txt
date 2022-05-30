@@ -1,0 +1,98 @@
+Done:
+
+1. And Operation: https://www.codechef.com/problems/TAAND
+
+2. Intersting Xor!: https://www.codechef.com/problems/IRSTXOR
+
+3. And Product: https://www.hackerrank.com/challenges/and-product/problem
+
+4. Bitwise Tuples: https://www.codechef.com/JUNE21B/problems/BITTUP
+
+5. Xor Equality: https://www.codechef.com/MAY21B/problems/XOREQUAL             ///all even number between [0,2^n-1] valid for this.
+
+6. Magical Flips: https://www.codechef.com/START10C/problems/CRDFLP 
+
+7. XOR-pyramid: https://codeforces.com/problemset/problem/983/B               ///DP+range queries+bitwise
+
+8. Xor Equation: https://www.codechef.com/NOV21B/problems/XOREQN
+    (a1+x) xor (a2+x) xor .... (an+x)=0 find minimum x.[n is odd]              ///intersting problem
+
+9. Meaningless Operations: https://codeforces.com/problemset/problem/1110/C
+
+10. Brutal-Xors : https://www.codechef.com/START20B/problems/BRTXORS
+
+11. And It's Non-Zero: https://codeforces.com/problemset/problem/1615/B
+
+12. Again XOR problem: https://www.codechef.com/CDRV21B/problems/KLXOR
+
+13. And Or Union: https://www.codechef.com/START21B/problems/ANDORUNI
+
+14. Even Subset Xor : https://www.codechef.com/START22B/problems/EVENXOR
+
+15. XOR Equal: https://www.codechef.com/SEPT21A/problems/PALINT
+
+16.Maximum Array Xor: https://www.codechef.com/START7C/problems/MAXARXOR
+
+17. Xor Again: https://www.codechef.com/problems/XORAGN
+
+18. Range AND: https://www.codechef.com/problems/RGAND
+
+19. Non Zero Subarray Xor : https://www.codechef.com/problems/SUBARRAYXOR                       ///every subarray with xor is not zero.
+
+20. And Matching: https://codeforces.com/contest/1631/problem/C
+
+21. Permutation XOR Sum: https://www.codechef.com/problems/PERMXORSUM
+
+22. Strange Test: https://codeforces.com/problemset/problem/1632/C
+
+23. Roof Construction: https://codeforces.com/problemset/problem/1632/B
+
+24. Yet Another Constructive Problem: https://www.codechef.com/START24B/problems/ORANDCON
+
+25. AND and SUM: https://atcoder.jp/contests/abc238/tasks/abc238_d                  ///great one
+
+26. Bitwise Blend: https://www.codechef.com/problems/BITBLEND
+
+27. Bitwise swaps : https://www.codechef.com/problems/BITSWAPS                     ///dsu+bit
+
+28. XOR to All: https://atcoder.jp/contests/arc135/tasks/arc135_c
+
+29. Xor Palindrome : https://www.codechef.com/FEB222B/problems/XORPAL
+
+30. Permutation Xority : https://www.codechef.com/problems/PERMXORITY
+
+31. Moves on Binary Tree : https://atcoder.jp/contests/abc243/tasks/abc243_d
+
+32. Subarray XOR : https://www.codechef.com/problems/SUB_XOR
+
+33. The Unchanging OR : https://www.codechef.com/START31B/problems/UNCHANGEDOR
+
+34. XOR and AND : https://www.codechef.com/START31B/problems/XORAND
+
+35. 388535 (Easy Version) : https://codeforces.com/problemset/problem/1658/D1
+
+37. Dazzling AXNODR Challenge : https://www.codechef.com/APRIL221B/problems/AXNODR
+
+38. Binary String Xor: https://www.codechef.com/START34B/problems/BSXOR
+
+39. Good Permutation : https://www.codechef.com/START34B/problems/GDPERM
+
+40. Chef Find XOR Beautiful : https://www.codechef.com/problems/CFXORB
+
+41. Mystical Numbers  : https://www.codechef.com/MAY221B/problems/XORGAND
+
+42. Make them Zero : https://www.codechef.com/MAY222B/problems/MAKEZERO
+
+43. AND Sorting : https://codeforces.com/contest/1682/problem/B
+
+44. Good Pairs : https://www.codechef.com/START40B/problems/XORR
+
+45. Or Permutation : https://www.codechef.com/START40B/problems/ORPERM
+
+
+
+
+
+
+
+
