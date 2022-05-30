@@ -1,0 +1,13 @@
+
+Done
+
+1. Sum of Maximum Weights : https://atcoder.jp/contests/abc214/tasks/abc214_d
+
+2. Mocha and Diana (Easy Version): https://codeforces.com/problemset/problem/1559/D1
+
+3. Graph Destruction: https://atcoder.jp/contests/abc229/tasks/abc229_e
+
+4. Moom's Travelling: https://toph.co/arena?practice=61549ca14b636b2689507461#!/p/6133acabf57b2fde0eb34f79
+
+5. Bitwise swaps : https://www.codechef.com/problems/BITSWAPS                     ///dsu+bit
+
