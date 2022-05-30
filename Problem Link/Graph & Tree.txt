@@ -1,0 +1,35 @@
+
+
+
+Done
+
+1. Number of Shortest paths: https://atcoder.jp/contests/abc211/tasks/abc211_d                                  ///bfs+dp
+
+2. Roads in Berland: https://codeforces.com/problemset/problem/25/C                                            ///DP+floyedwarshal
+
+3. Neighbors: https://atcoder.jp/contests/abc231/tasks/abc231_d                                               ///Cycle detection
+
+4. Sardar and GCD: https://www.codechef.com/problems/DLTNODE                                                  ///Tree+GCD
+
+5. Tree House: https://www.codechef.com/problems/THOUSES                                                     ///tree base
+
+6. RGB Construction: https://www.codechef.com/COOK136B/problems/RGBCONST                                    ///tree
+
+7. Not Assigning: https://codeforces.com/problemset/problem/1627/C                                         ///tree
+
+8. Multiply and Rotate: https://atcoder.jp/contests/abc235/tasks/abc235_d                                  ///bfs
+
+9. The Melancholy of Problem Setter: https://www.codechef.com/START21C/problems/SOS                       
+
+10. Subtree K-th Max: https://atcoder.jp/contests/abc239/tasks/abc239_e
+
+11. Endless Walk : https://atcoder.jp/contests/abc245/tasks/abc245_f                                       ///SCC
+
+12. Tree Infection : https://codeforces.com/problemset/problem/1665/C
+
+13. White-Black Balanced Subtrees : https://codeforces.com/contest/1676/problem/G                       ///dfs
+
+14. Alternating Diameter : https://www.codechef.com/MAY221B/problems/ALTDIA
+
+
+
