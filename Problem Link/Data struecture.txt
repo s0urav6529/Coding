@@ -1,0 +1,39 @@
+
+
+Ordered Set
+
+1. smallest subarrays: https://www.hackerearth.com/problem/algorithm/smallest-subarray-6a9abf79/
+2. string reversal: https://codeforces.com/problemset/problem/1430/E
+
+
+Multi Ordered Set
+
+1. Seating Arrangements (easy version): https://codeforces.com/problemset/problem/1566/D1
+
+2. Maximum Crossings (Hard Version) : https://codeforces.com/contest/1676/problem/H2
+
+3. Rooks Defenders : https://codeforces.com/contest/1679/problem/C
+
+
+Dequeue
+
+1. LR insertion: https://atcoder.jp/contests/abc237/tasks/abc237_d
+
+2. Inversion Graph: https://codeforces.com/contest/1638/problem/C
+
+3.  Cylinder : https://atcoder.jp/contests/abc247/tasks/abc247_d
+
+
+///map+vector
+
+1. Strange Balls : https://atcoder.jp/contests/abc240/tasks/abc240_d
+
+
+///priprity Queue
+
+1. Tree Infection : https://codeforces.com/problemset/problem/1665/C
+
+
+
+
+
