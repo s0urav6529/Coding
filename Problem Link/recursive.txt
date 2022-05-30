@@ -1,0 +1,10 @@
+
+
+Done: 
+
+1. Nearest Beautiful Number (hard version): https://codeforces.com/contest/1560/problem/F2
+
+2. Count Number of Peaks: https://www.codechef.com/CDRV21B/problems/CNTPEAK
+
+3. Alice and the Cake : https://codeforces.com/contest/1654/problem/C
+
