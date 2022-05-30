@@ -1,0 +1,25 @@
+
+
+1. Lost Numbers : https://codeforces.com/problemset/problem/1167/B
+
+2. Bear and Prime 100 : https://codeforces.com/problemset/problem/679/A
+
+3. Guess the Array : https://codeforces.com/problemset/problem/727/C
+
+4. Guess the K-th Zero (Easy version) :https://codeforces.com/problemset/problem/1520/F1
+
+5. Flamingoes of Mystery : https://codeforces.com/problemset/problem/1425/F
+
+6. Pick Heroes : https://codeforces.com/contest/1056/problem/C
+
+7. Guessing the Greatest (hard version) : https://codeforces.com/contest/1486/problem/C2
+
+8. Searching Local Minimum : https://codeforces.com/contest/1480/problem/C
+
+9. Guess the Number : https://codeforces.com/gym/101021/problem/1
+
+10. XOR Guessing : https://codeforces.com/contest/1207/problem/E
+
+11. Chocolate Bunny : https://codeforces.com/problemset/problem/1407/C
+
+
