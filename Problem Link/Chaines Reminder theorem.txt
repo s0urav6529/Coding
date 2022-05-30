@@ -1,0 +1,9 @@
+
+
+Done
+
+1. Reminder Game: https://codeforces.com/problemset/problem/687/B
+2. Congruence Equation: https://codeforces.com/contest/919/problem/E
+3. Number of sequence: https://www.hackerrank.com/contests/w22/challenges/number-of-sequences
+
+
