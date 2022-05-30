@@ -1,0 +1,11 @@
+
+
+
+
+
+1. K Distinct Array: https://www.codechef.com/START25B/problems/DISTK
+
+2. Max Min : https://atcoder.jp/contests/abc247/tasks/abc247_e
+
+3. Subarrays with length : https://www.codechef.com/submit-v2/SUBARRAYLEN                   ///No of subarray that has a number that equal to lenght
+
