@@ -1,0 +1,8 @@
+
+
+1. Minimum Coloring : https://www.codechef.com/problems/MINCOLOR                       ///coloring+constructive
+
+2. Madoka and the Elegant Gift : https://codeforces.com/contest/1647/problem/B
+
+3. Madoka and Childish Pranks : https://codeforces.com/contest/1647/problem/C
+
