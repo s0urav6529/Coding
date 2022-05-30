@@ -33,7 +33,7 @@ Done
 
 15. Dijkstra? : https://codeforces.com/contest/20/problem/C                                   ///Dijkstra
 
-16. Returning Home : https://codeforces.com/contest/1422/problem/D
+16. Returning Home : https://codeforces.com/contest/1422/problem/D                           ///Dijkstra
 
 
 
