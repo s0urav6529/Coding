@@ -1,0 +1,38 @@
+
+Done:
+
+1. Two Arrays: https://codeforces.com/problemset/problem/1288/C                                          ///Stars and Bars theoem
+
+2. Marbles: https://www.spoj.com/problems/MARBLES/                                                       ///Stars and Bars theorem
+
+
+1. Kuroni and Impossible Calculation: https://codeforces.com/contest/1305/problem/C                     ///Pigeon Hole Principle
+
+2. Module Sum: https://codeforces.com/problemset/problem/577/B                                          ///Pigeon Hole Principle 
+
+
+
+1. Distinct Elements: https://www.codechef.com/problems/DISTELE                                        ///Combinatorics
+
+2. Ayoub and Lost Array: https://codeforces.com/contest/1105/problem/C                                 ///DP+Combinatorics
+
+3. Flowers: https://codeforces.com/contest/474/problem/D                                               ///DP+Combinatorics
+
+4. Dice Sum : https://atcoder.jp/contests/abc248/tasks/abc248_c                                       ///DP+Combinatorics
+
+5. Palindrome Basis : https://codeforces.com/contest/1673/problem/C                                    ///DP+Combinatorics
+
+6. Where is the Pizza? : https://codeforces.com/contest/1670/problem/C                                 ///Combinatorics  
+
+8. Infinite Replacement : https://codeforces.com/contest/1674/problem/C                                ///Combinatorics  
+
+9. CQXYM Count Permutations: https://codeforces.com/contest/1581/problem/A                             ///Bijection
+
+10. Marin and Anti-coprime Permutation : https://codeforces.com/problemset/problem/1658/B               /// factorial
+
+Not Done:
+
+Maximum Subsequence Value: https://codeforces.com/problemset/problem/1365/E 
+
+
+
