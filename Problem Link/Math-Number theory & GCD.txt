@@ -94,7 +94,9 @@ Done
 
 46. Secret Machine Mania : https://www.codechef.com/LTIME107B/problems/GCD_LCM              ///prime factorization concept
 
-47.  Z mod X = C : https://codeforces.com/problemset/problem/1684/B                       
+47.  Z mod X = C : https://codeforces.com/problemset/problem/1684/B         
+
+48. FizzBuzz Sum Hard : https://atcoder.jp/contests/abc253/tasks/abc253_d
 
 
 
