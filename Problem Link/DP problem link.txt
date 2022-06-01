@@ -62,6 +62,11 @@ Done:
 
 
 
+///Sequence DP
+
+1. Redistribution : https://atcoder.jp/contests/abc178/tasks/abc178_d
+
+
 Digit DP:
 
 1. Required Length : https://codeforces.com/problemset/problem/1681/D                               
