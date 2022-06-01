@@ -18,5 +18,6 @@
 
 9. Broken Life : https://www.codechef.com/START33B/problems/BRKNLIFE
 
+10. Shift The String : https://www.codechef.com/problems/TASHIFT
 
 
