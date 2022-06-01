@@ -35,6 +35,8 @@ Done
 
 16. Returning Home : https://codeforces.com/contest/1422/problem/D                           ///Dijkstra
 
+17.Vertical Paths : https://codeforces.com/problemset/problem/1675/D
+
 
 
  
