@@ -98,6 +98,8 @@ Done
 
 48. FizzBuzz Sum Hard : https://atcoder.jp/contests/abc253/tasks/abc253_d
 
+49. Possible GCD : https://www.codechef.com/JUNE221B/problems/DISTGCD
+
 
 
 Undone:
