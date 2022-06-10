@@ -89,7 +89,7 @@ Done:
 
 45. Or Permutation : https://www.codechef.com/START40B/problems/ORPERM
 
-
+46. Maximise Set Bits : https://www.codechef.com/submit-v2/MAXIMISEBITS
 
 
 
