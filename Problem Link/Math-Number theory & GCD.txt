@@ -100,6 +100,7 @@ Done
 
 49. Possible GCD : https://www.codechef.com/JUNE221B/problems/DISTGCD
 
+50. Construct An Array : https://www.codechef.com/submit-v2/CAARRAY
 
 
 Undone:
