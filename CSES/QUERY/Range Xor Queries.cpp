@@ -1,0 +1,68 @@
+#include<bits/stdc++.h>
+using namespace std;
+using ll=long long;
+using ld=long double;
+#define mod 1000000007
+#define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define read freopen ("in.txt","r",stdin);
+#define out freopen ("out.txt","w",stdout);
+
+
+void solution()
+{
+    int n,q;
+    cin>>n>>q;
+    vector<int>a(n);
+    for(int i=0;i<n;i++) cin>>a[i];
+    int block=sqrt(n);
+    vector<int>block_xor(block+1,0);
+    for(int i=0;i<n;i++)
+    {
+        block_xor[i/block]^=a[i];
+    }
+    while(q--){
+        int l,r;
+        cin>>l>>r;
+        l--,r--;
+        int lb=l/block;
+        int rb=r/block;
+
+        int sum=0;
+        if(lb==rb){
+            for(int i=l;i<=r;i++) sum^=a[i];
+        }
+        else{
+
+            for(int i=l;i<((lb+1)*block);i++){
+                sum^=a[i];
+            }
+
+            for(int i=lb+1;i<rb;i++){
+                sum^=block_xor[i];
+            }
+
+            for(int i=rb*block;i<=r;i++){
+                sum^=a[i];
+            }
+
+        }
+        cout<<sum<<endl;
+
+    }
+    return;
+}
+int main()
+{
+    fast;
+    //read;
+    //out;
+    int tc=1;
+    //cin>>tc;
+//    for(int z=1;z<=tc;z++)
+//    {
+//        cout<<"Case #"<<z<<": ";
+//
+//    }
+    while(tc--) solution();
+    return 0;
+}
