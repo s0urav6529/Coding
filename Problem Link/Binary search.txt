@@ -7,4 +7,5 @@
 
 3. Range Count Query : https://atcoder.jp/contests/abc248/tasks/abc248_d
 
+4. Binary String : https://codeforces.com/problemset/problem/1680/C
 
