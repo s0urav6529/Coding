@@ -39,4 +39,6 @@ Done
 
 18. Fake Plastic Trees : https://codeforces.com/contest/1694/problem/D
 
+19. Full Path Eraser : https://www.codechef.com/JUNE221B/problems/FPE
+
  
