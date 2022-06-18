@@ -10,26 +10,28 @@ const int limit=1000006;
 
 int main(){
     fast;
-    int tc=1;
-    cin>>tc;
+    ll tc=1;
+    scanf("%d",&tc);
     for(int t=1;t<=tc;t++){
 
-        int n,q;
-        cin>>n>>q;
-        vector<pair<int,int>>qq(q);
+        ll n,q;
+        scanf("%llu %llu",&n,&q);
+        vector<pair<ll,ll>>qq(q);
 
         bool f=false;
         for(int i=0;i<q;i++) {
-            cin>>qq[i].first>>qq[i].second;
-            if((qq[i].second-qq[i].first+1)>64) f=true;
+
+            scanf("%llu %llu",&qq[i].first,&qq[i].second);
+            if((qq[i].second-qq[i].first+1)>64ll) f=true;
         }
 
         if(f){
-            cout<<"Case "<<t<<": "<<"Impossible"<<endl;
+            printf("Case %llu:\n",t);
+            printf("Impossible\n");
             continue;
         }
         ll ans[n+5];
-        for(int  i=1;i<=n;i++) ans[i]=-1;
+        for(int i=1;i<=n;i++) ans[i]=-1;
 
         sort(qq.begin(),qq.end());
         for(int i=0;i<q;i++){
@@ -58,14 +60,12 @@ int main(){
             if(ans[i]==-1) ans[i]=0;
         }
 
-        cout<<"Case "<<t<<": "<<endl;
-
+        printf("Case %llu:\n",t);
         for(int  i=1;i<=n;i++) {
 
             printf("%llu",(1ll<<ans[i]));
             if(i<n) printf(" ");
             else printf("\n");
-
         }
     }
     return 0;
