@@ -91,6 +91,8 @@ Done:
 
 46. Maximise Set Bits : https://www.codechef.com/submit-v2/MAXIMISEBITS
 
+47. Permutation AND : https://www.codechef.com/submit-v2/PERMAND
+
 
 
 
