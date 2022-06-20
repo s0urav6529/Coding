@@ -4,3 +4,5 @@ Count 1's : https://atcoder.jp/contests/arc137/tasks/arc137_b              ///Gr
 Reduce to 1 : https://www.codechef.com/problems/RED1
 
 Geometric Mean Inequality : https://www.codechef.com/problems/GMINEQ
+
+https://www.codechef.com/submit-v2/LOSTARRAY_
