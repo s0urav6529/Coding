@@ -95,6 +95,7 @@ Done:
 
 48. Equal by XORing : https://www.codechef.com/submit-v2/EQBYXOR
 
+49. Triple Xor : https://www.codechef.com/submit/ABCXOR
 
 
 
