@@ -1,6 +1,5 @@
 
 
-
 ///single source shortest path from a root node using dijkastra algorithm
 ///Time complexity O(v logv+e) ///logv for sorting the priority queue
 
@@ -18,7 +17,7 @@ int main()
 
     vector<pair<int,int>>adj[n+1];
 
-    vector<int>dis(n+1,INFINITY);
+    vector<int>dis(n+1,INFINITY),vis(n+1,0);
 
     for(int i=1;i<=e;i++)
     {
@@ -37,6 +36,9 @@ int main()
         int weight=pq.top().first;
         int node=pq.top().second;
         pq.pop();
+
+        if(vis[node]) continue;
+        vis[node]=1;
 
         for(pair<int,int>child:adj[node]){
 
@@ -65,9 +67,6 @@ int main()
 3 5 3
 5 4 5
 */
-
-
-
 
 
 
