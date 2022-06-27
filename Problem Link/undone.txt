@@ -6,3 +6,5 @@ Reduce to 1 : https://www.codechef.com/problems/RED1
 Geometric Mean Inequality : https://www.codechef.com/problems/GMINEQ
 
 https://www.codechef.com/submit-v2/LOSTARRAY_
+
+https://www.codechef.com/submit/APGRID
