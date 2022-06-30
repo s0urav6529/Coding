@@ -97,7 +97,7 @@ Done:
 
 49. Triple Xor : https://www.codechef.com/submit/ABCXOR
 
-
+50. Xor and Multiply : https://www.codechef.com/submit/XORMUL
 
 
 
