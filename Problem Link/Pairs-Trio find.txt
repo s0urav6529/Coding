@@ -5,3 +5,7 @@
 youtube : https://www.youtube.com/watch?v=q9e7gu5Kj40
 
 2. Distinct Trio : https://atcoder.jp/contests/abc252/tasks/abc252_d
+
+3. 3SUM Closure : https://codeforces.com/contest/1698/problem/C
+
+
