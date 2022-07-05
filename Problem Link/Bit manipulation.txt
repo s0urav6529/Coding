@@ -99,5 +99,6 @@ Done:
 
 50. Xor and Multiply : https://www.codechef.com/submit/XORMUL
 
+51. Xor Permutation : https://www.codechef.com/problems/XORPERM
 
 
