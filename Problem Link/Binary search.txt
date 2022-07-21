@@ -9,3 +9,7 @@
 
 4. Binary String : https://codeforces.com/problemset/problem/1680/C
 
+5. Positive array : https://www.codechef.com/START48B/problems/CIREQ
+
+
+
