@@ -41,4 +41,6 @@ Done
 
 19. Full Path Eraser : https://www.codechef.com/JUNE221B/problems/FPE
 
+20. Accurate XOR : https://www.codechef.com/submit/TREEXOR
+
  
