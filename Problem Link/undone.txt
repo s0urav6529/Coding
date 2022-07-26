@@ -7,3 +7,8 @@ Geometric Mean Inequality : https://www.codechef.com/problems/GMINEQ
 
 https://www.codechef.com/submit-v2/LOSTARRAY_
 
+Maximum White Subtree : https://codeforces.com/contest/1324/problem/F
+
+Almost Triple Deletions : https://codeforces.com/contest/1699/problem/D
+
+
