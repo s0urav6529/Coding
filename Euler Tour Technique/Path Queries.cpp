@@ -2,6 +2,8 @@
 
 ///Problem Link : https://cses.fi/problemset/task/1138
 
+//// Sum from root to a node s
+
 
 
 #include<bits/stdc++.h>
