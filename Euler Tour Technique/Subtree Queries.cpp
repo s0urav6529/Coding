@@ -2,6 +2,8 @@
 
 /// Problem link : https://cses.fi/problemset/task/1137
 
+////  calculate the sum of values in the subtree of node s
+
 
 #include<bits/stdc++.h>
 using namespace std;
