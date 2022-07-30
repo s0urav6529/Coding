@@ -11,4 +11,16 @@ Maximum White Subtree : https://codeforces.com/contest/1324/problem/F
 
 Almost Triple Deletions : https://codeforces.com/contest/1699/problem/D
 
+https://www.codechef.com/submit/ORXOR
+
+https://www.codechef.com/submit/HEIGHTS
+
+https://www.codechef.com/submit/COPYPUSH
+
+https://www.codechef.com/submit/LARGEFAM
+
+https://www.codechef.com/submit/STRINGXOR
+
+https://www.codechef.com/submit/FARHOSTEL
+
 
