@@ -101,4 +101,6 @@ Done:
 
 51. Xor Permutation : https://www.codechef.com/problems/XORPERM
 
+52. The XOR-OR Dilemma: https://www.codechef.com/submit/ORXOR
+
 
