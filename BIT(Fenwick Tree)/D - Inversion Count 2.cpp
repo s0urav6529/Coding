@@ -1,3 +1,11 @@
+
+
+
+Link of the problem
+///https://www.spoj.com/problems/INVCNT/
+
+
+
 #include<bits/stdc++.h>
 using namespace std;
 
