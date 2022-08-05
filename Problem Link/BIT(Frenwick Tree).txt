@@ -1,0 +1,4 @@
+
+1. Inversion Count: https://www.spoj.com/problems/INVCNT/
+
+
