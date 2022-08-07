@@ -1,4 +1,5 @@
 
 1. Inversion Count: https://www.spoj.com/problems/INVCNT/
 
+2. Diablo : https://lightoj.com/problem/diablo
 
