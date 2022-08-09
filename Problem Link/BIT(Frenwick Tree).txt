@@ -3,3 +3,7 @@
 
 2. Diablo : https://lightoj.com/problem/diablo
 
+3. Curious Robin Hood : https://lightoj.com/problem/curious-robin-hood
+
+
+
