@@ -103,4 +103,6 @@ Done:
 
 52. The XOR-OR Dilemma: https://www.codechef.com/submit/ORXOR
 
+53. Pairwise Xors : https://www.codechef.com/problems/XORABC
+
 
