@@ -62,6 +62,8 @@ Done:
 
 30. Flipping and Bonus : https://atcoder.jp/contests/abc261/tasks/abc261_d
 
+31. Chip Move : https://codeforces.com/problemset/problem/1716/D
+
 
 
 ///Sequence DP
