@@ -3,7 +3,6 @@ BLOG LINK: https://codeforces.com/blog/entry/88193
 
 #include <ext/pb_ds/tree_policy.hpp>
 #include <ext/pb_ds/assoc_container.hpp>
-using namespace std;
 
 namespace __gnu_pbds{
           typedef tree<int,
