@@ -64,6 +64,8 @@ Done:
 
 31. Chip Move : https://codeforces.com/problemset/problem/1716/D
 
+32. Adjecents Xors : https://www.codechef.com/problems/ADJXOR2 
+
 
 
 ///Sequence DP
