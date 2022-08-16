@@ -105,4 +105,6 @@ Done:
 
 53. Pairwise Xors : https://www.codechef.com/problems/XORABC
 
+54. Xor With smallest element : https://www.codechef.com/submit/SMALLXOR
+
 
