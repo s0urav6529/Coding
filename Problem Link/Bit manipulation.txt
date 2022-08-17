@@ -107,4 +107,6 @@ Done:
 
 54. Xor With smallest element : https://www.codechef.com/submit/SMALLXOR
 
+55. Burenka and Traditions (hard version) : https://codeforces.com/contest/1719/problem/D2
+
 
