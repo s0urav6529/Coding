@@ -33,8 +33,6 @@ void dfs(int node,int par){
 
 int main(){
     fast;
-    //Fin;
-    //Fout;
     int tc=1;
     //cin>>tc;
     while(tc--){
