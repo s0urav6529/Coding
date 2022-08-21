@@ -109,4 +109,7 @@ Done:
 
 55. Burenka and Traditions (hard version) : https://codeforces.com/contest/1719/problem/D2
 
+56. 2+ doors : https://codeforces.com/problemset/problem/1715/D
+
+
 
