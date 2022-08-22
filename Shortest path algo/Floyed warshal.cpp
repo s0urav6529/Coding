@@ -20,20 +20,21 @@ int main()
     ll dp[n+5][n+5];
 
     for(int i=1;i<=n;i++){
-        for(int j=1;j<=n;j++) dp[i][j]=imax;
+        for(int j=1;j<=n;j++) 
+            dp[i][j]=imax;
     }
 
     //vector<edge>e(m);
 
     for(int i=0;i<m;i++){
 
-        int a,b,c;
-        cin>>a>>b>>c;
+        int u,v,w;
+        cin>>u>>v>>w;
 
-        //e[i]={a,b,c};
+        //e[i]={u,v,w};
 
-        dp[a][b]=c;
-        dp[b][a]=c;
+        dp[u][v]=w;
+        dp[v][u]=w;
 
     }
 
@@ -41,8 +42,11 @@ int main()
 
         for(int i=1;i<=n;i++){
 
-            for(int j=1;j<=n;j++) dp[i][j]=min(dp[i][j],dp[i][mid]+dp[mid][j]);
-
+            for(int j=1;j<=n;j++) {
+              
+                dp[i][j] = min ( dp[i][j] ,dp[i][mid] + dp[mid][j] );
+            
+            }
         }
     }
 
