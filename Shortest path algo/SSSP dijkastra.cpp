@@ -17,10 +17,10 @@ int main()
 
     vector<pair<int,int>>adj[n+1];
 
-    vector<int>dis(n+1,INFINITY),vis(n+1,0);
+    vector<int>dis(n+1,1e9),vis(n+1,0);
 
-    for(int i=1;i<=e;i++)
-    {
+    for(int i=1;i<=e;i++){
+        
         int x,y,w;
         cin>>x>>y>>w;
         adj[x].push_back({y,w});
@@ -31,8 +31,8 @@ int main()
 
     dis[1]=0;
     pq.push({0,1});
-    while(!pq.empty())
-    {
+    while(!pq.empty()) {
+        
         int weight=pq.top().first;
         int node=pq.top().second;
         pq.pop();
