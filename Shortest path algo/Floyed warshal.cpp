@@ -21,7 +21,8 @@ int main()
 
     for(int i=1;i<=n;i++){
         for(int j=1;j<=n;j++) 
-            dp[i][j]=imax;
+            if(i==j) dp[i][j]=0
+            else dp[i][j]=imax;
     }
 
     //vector<edge>e(m);
