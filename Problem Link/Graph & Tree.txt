@@ -51,4 +51,5 @@ Done
 
 24. Chef and Reversing : https://www.codechef.com/problems/REVERSE                      /// 0-1BFS
 
+25. KATHTHI - KATHTHI :   https://www.spoj.com/problems/KATHTHI/                        /// 0-1BFS
 
