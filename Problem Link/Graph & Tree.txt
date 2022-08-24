@@ -45,8 +45,10 @@ Done
 
 21. Tree Coloring : https://www.codechef.com/submit/TREECLR                                ///Tree + combinatorics
 
-22. Toll Management : https://lightoj.com/problem/toll-managementn                     //Dijkstra
+22. Toll Management : https://lightoj.com/problem/toll-managementn                        //Dijkstra
 
- 
+23. Commandos : https://lightoj.com/problem/commandos                                   ///Dijkstra
+
+24. Chef and Reversing : https://www.codechef.com/problems/REVERSE                      /// 0-1BFS
 
 
