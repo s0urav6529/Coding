@@ -12,3 +12,9 @@ Done
 5. Bitwise swaps : https://www.codechef.com/problems/BITSWAPS                     ///dsu+bit
 
 6. Decayed Bridges : https://atcoder.jp/contests/abc120/tasks/abc120_d
+
+7. MEX Revised : https://toph.co/p/mex-revised
+
+
+
+
