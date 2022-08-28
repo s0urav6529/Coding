@@ -66,6 +66,8 @@ Done:
 
 32. Adjecents Xors : https://www.codechef.com/problems/ADJXOR2 
 
+33. Xor-Subsequence (easy version) : https://codeforces.com/problemset/problem/1720/D1
+
 
 
 ///Sequence DP
