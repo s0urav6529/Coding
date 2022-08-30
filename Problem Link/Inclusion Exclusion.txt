@@ -2,4 +2,10 @@
 
 1. The Three Musketeers : https://www.hackerearth.com/problem/algorithm/the-three-musketeers-6efd5f2d/
 
+2. Beautiful Number : https://algo.codemarshal.org/problems/556ccd652251f00300a82f8c
+
+3. Co-Prime: http://acm.hdu.edu.cn/showproblem.php?pid=4135
+
+4. NGM2 - Another Game With Numbers : https://www.spoj.com/problems/NGM2/
+
 
