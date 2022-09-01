@@ -4,86 +4,96 @@
 
 ///tarpor maximum finishing time e abar transpose matrix er upor dfs kore connected component ber korte hbe.
 
+
 #include<bits/stdc++.h>
-using namespace std;
-using ll=long long;
-using ld=long double;
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-#define read freopen ("in.txt","r",stdin);
-#define output freopen ("out.txt","w",stdout);
+using namespace std;
 
-vector<int>v[20005];  ///main graph
-vector<int>t[20005];  ///transpose graph
-vector<int>out;   ///storing node increasing of outtime
-vector<int>scc;   ///list of scc
-bool vis[20005];
-void dfs_out(int node)
-{
-    vis[node]=1;
-    for(int child:v[node])  ///making dfs on main graph
-    {
-        if(vis[child]==0)
-        {
-            dfs_out(child);
-        }
+typedef long long int ll;
+typedef unsigned long long int llu;
+constexpr ll mod=1e9+7;
+const int limit=1e5+5;
+
+vector<int>adj[limit];
+vector<int>transpose[limit];
+vector<int>out,scc;
+vector<bool>vis(limit,false);
+
+void dfs_out(int node){   ///dfs for out time of node
+
+    vis[node]=true;
+
+    for(int ch:adj[node]){
+
+
+        if(vis[ch]==false)
+            dfs_out(ch);
+
     }
-    out.push_back(node);  ///storing node increasing of outtime
+
+    out.push_back(node);
+
 }
-void dfs(int node)  ///for scc
-{
-    vis[node]=1;
-    for(int child:t[node])  ///making dfs on transpose graph
-    {
-        if(vis[child]==0)
-        {
-            dfs(child);
-        }
+
+void dfs(int node){   ///dfs for scc 
+
+    vis[node]=true;
+
+    for(int ch:transpose[node]){
+
+        if(vis[ch]==false)
+            dfs(ch);
+
     }
+
     scc.push_back(node);
-}
-void solution()
-{
-    int n,e;
-    cin>>n>>e;
-    for(int i=1;i<=e;i++)
-    {
-        int x,y;
-        cin>>x>>y;
-        v[x].push_back(y);
-        t[y].push_back(x);
-    }
-    for(int i=1;i<=n;i++)  ///out time measure dfs
-    {
-        if(vis[i]==0)
-        {
-            dfs_out(i);
-        }
-    }
-    for(int i=1;i<=n;i++) vis[i]=0;
 
-    for(int i=1;i<=n;i++)  ///scc dfs
-    {
+}
+
+int main(){
+    fast;
+    ll n,e;
+    cin >> n >> e;
+
+    for(int i=1;i<=e;i++){
+        ll x,y;
+
+        cin >> x >> y;
+
+        adj[x].push_back(y);
+
+        transpose[y].push_back(x);
+    }
+
+    for(int i=1;i<=n;i++){
+
+        if(vis[i]==false)    ///calculate out time of each node
+            dfs_out(i);
+
+    }
+
+    for(int i=1;i<=n;i++)
+        vis[i]=false;
+
+    for(int i=1;i<=n;i++){
+
         scc.clear();
-        if(vis[out[n-i]]==0)  ///orderwise traverse
-        {
+
+        if(vis[out[n-i]]==false){
+
             dfs(out[n-i]);
+
             cout<<"SCC are : ";
             for(auto j:scc) cout<<j<<" ";
             cout<<endl;
-        }
-    }
 
-    return;
-}
-int main()
-{
-    fast;
-    //read;
-    //output;
-    int tc=1;
-    //cin>>tc;
-    while(tc--) solution();
+        }
+
+    }
     return 0;
 }
+
+
+
 
 
