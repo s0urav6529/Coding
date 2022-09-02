@@ -6,36 +6,35 @@ using ld=long double;
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 #define read freopen ("in.txt","r",stdin);
 #define out freopen ("out.txt","w",stdout);
-#define mx 100005
-int n;
-int a[mx];
-int tree[mx*4];
-void segment_tree(int node,int b,int e){
-    if(b==e){
+const int limit=2e5+5;
 
-        tree[node]=a[b];
+int a[limit];
+int st[limit << 2];
+
+void segment_tree(int node,int b,int e){
+
+    if(b==e){
+        st[node]=a[b];
         return;
     }
 
-    int left_c=node*2;
-    int right_c=node*2+1;
-
     int mid=(b+e)/2;
 
-    segment_tree(left_c,b,mid);
+    segment_tree( node << 1, b, mid );
+    segment_tree( node << 1 | 1, mid+1, e );
 
-    segment_tree(right_c,mid+1,e);
+    st[node]= st[node << 1] + st[node << 1 | 1];
 
-    tree[node]=tree[left_c]+tree[right_c];
 }
 
 int main(){
     fast;
+    int n;
     cin>>n;
     for(int i=1;i<=n;i++) //entering the array
         cin>>a[i];
     segment_tree(1,1,n);  ///bulid the segment tree
-    for(int i=1;i<=20;i++) cout<<tree[i]<<" ";
+    for(int i=1;i<=20;i++) cout<<st[i]<<" ";
     return 0;
 }
 
