@@ -7,7 +7,7 @@ Link : https://cp-algorithms.com/algebra/phi-function.html
 
 
 
->>>>>>>>>>>>>>>>>>>>Euler totient implementation using factorization in :  O( sqrt (n) )  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>>>>> Euler totient implementation using factorization in :  O( sqrt (n) )  <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 #include<bits/stdc++.h>
 using namespace std;
@@ -53,7 +53,7 @@ int main(){
 }
 
 
->>>>>>>>>>>>>>>>> Euler totient function from 1 to n in O( n log log n)) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+>>>>>>>>>>>>>>>>> Euler totient function from 1 to n in : O( n log log n)) <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
 
 #include<bits/stdc++.h>
 using namespace std;
