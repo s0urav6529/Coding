@@ -111,5 +111,10 @@ Done:
 
 56. 2+ doors : https://codeforces.com/problemset/problem/1715/D
 
+57. OR Tuples : https://www.codechef.com/START55B/problems/ORTUPLES
+
+58. Non Zero Xor : https://www.codechef.com/START55B/problems/NZXOR
+
+
 
 
