@@ -13,14 +13,14 @@ ll mulmod(ll a,ll b){
     return Mod(Mod(a)*Mod(b)); ///((a%m)*(b%m))%m
 }
 
-ll Binary_expo(ll a,ll n){   ///a^n
+ll Binary_expo(ll a,ll p){   ///a^n
 	ll res=1;
-	while(n){
+	while(p){
 
-		if(n&1)
+		if(p & 1)
 		res=mulmod(res,a);
 
-		n/=2;
+		p/=2;
 		a=mulmod(a,a);
 	}
 	return res%MOD;
