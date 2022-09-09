@@ -28,6 +28,10 @@ ll Binary_expo(ll a,ll p){
 	return res%MOD;
 }
 
+ll modular_inverse(ll base){
+     return Binary_expo(base,MOD-2);	/// base is the denominator
+}
+
 ll nCr(ll n,ll r){
 
     ll numerator= fact[n];
