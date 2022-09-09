@@ -1,6 +1,6 @@
 
 
-Euler's totient function, also known as phi-function , counts the number of integers between 1 and  inclusive, which are coprime 1 to n.
+Euler's totient function, also known as phi-function , counts the number of integers between 1 and N  inclusive, which are coprime 1 to N.
 
 
 Link : https://cp-algorithms.com/algebra/phi-function.html
