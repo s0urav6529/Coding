@@ -1,4 +1,5 @@
 
+/// update k th pos with v
 
 /// find the maxmim sum subarray from L to R
 
@@ -14,20 +15,25 @@ typedef long long int ll;
 
 const int limit=5e4+5;
 
-struct node{
-    ll tsum,pref,suff,maxsub;
+struct Node{
 
-    node(){
-        tsum=maxsub=pref=suff=-1e16;
+    ll tsum;
+    ll pref;
+    ll suff;
+    ll maxsub;
+
+    Node(){
+        tsum = maxsub = pref = suff =-1e16;
     }
 
-}st[limit<<4];
+}st[limit << 2];
+
 ll a[limit];
 
 
-node Marge(node left,node right){
+Node Marge(Node left,Node right){
 
-    node parentnode;
+    Node parentnode;
 
     parentnode.tsum=left.tsum+right.tsum;
 
@@ -42,59 +48,58 @@ node Marge(node left,node right){
 
 
 
-void built_tree(int Node,int b,int e){
+void built_tree(int node,int b,int e){
 
     if(b==e){
-        st[Node].tsum=st[Node].pref=st[Node].suff=st[Node].maxsub=a[b];
+        st[node].tsum= st[node].pref= st[node].suff= st[node].maxsub= a[b];
         return;
     }
 
     int mid=(b+e)/2;
 
-    built_tree(Node*2,b,mid);
-    built_tree(Node*2+1,mid+1,e);
+    built_tree(node << 1,b,mid);
+    built_tree(node << 1 | 1,mid+1,e);
 
-    st[Node]=Marge(st[Node*2],st[Node*2+1]);
+    st[node] = Marge(st[node << 1] ,st[node << 1 | 1]);
 }
 
-void update(int Node,int b,int e,int pos,int val){
+void update(int node,int b,int e,int pos,int val){
 
     if(b==e){
-
-        st[Node].tsum=st[Node].pref=st[Node].suff=st[Node].maxsub=a[b]=val;
+        st[node].tsum = st[node].pref = st[node].suff = st[node].maxsub = a[b] = val;
         return;
     }
 
     int mid=(b+e)/2;
 
     if(pos<=mid)
-        update(Node*2,b,mid,pos,val);
+        update(node << 1,b,mid,pos,val);
 
     else
-        update(Node*2+1,mid+1,e,pos,val);
+        update(node << 1 | 1,mid+1,e,pos,val);
 
-    st[Node]=Marge(st[Node*2],st[Node*2+1]);
+    st[node] = Marge(st[node << 1],st[node << 1 |1]);
 }
 
 
-node query(int Node,int b,int e,int l,int r){
+Node query(int node,int b,int e,int l,int r){
 
 
     if(e<l || b>r) {
-        node emptynode;
+        Node emptynode;
         return emptynode;
     }
 
     if(b>=l && e<=r){
-        return st[Node];
+        return st[node];
     }
 
     int mid=(b+e)/2;
 
-    node left=query(Node*2,b,mid,l,r);
-    node right=query(Node*2+1,mid+1,e,l,r);
+    Node left=query(node << 1,b,mid,l,r);
+    Node right=query(node << 1 | 1,mid+1,e,l,r);
 
-    node ans=Marge(left,right);
+    Node ans=Marge(left,right);
     return ans;
 
 }
