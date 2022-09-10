@@ -1,13 +1,14 @@
+
+///  Number of distinct integer in between L - R
+
 #include<bits/stdc++.h>
 using namespace std;
-using ll=long long;
-using ld=long double;
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-#define read freopen ("in.txt","r",stdin);
-#define out freopen ("out.txt","w",stdout);
-const int limit=2e5+5;
 
-#define block 700
+typedef long long int ll;
+const int limit=2e5+5;
+const int block=700;
+
 int a[limit];
 int fre[limit];
 int ans[limit];
@@ -45,7 +46,9 @@ int main()
     int n,qq;
     cin>>n>>qq;
     for(int i=0;i<n;i++) cin>>a[i];
+    
     for(int i=0;i<qq;i++){
+        
         cin>>q[i].l>>q[i].r;
         q[i].l--;
         q[i].r--;
@@ -81,3 +84,5 @@ int main()
 
     return 0;
 }
+
+
