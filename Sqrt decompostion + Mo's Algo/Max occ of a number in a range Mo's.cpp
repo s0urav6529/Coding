@@ -1,34 +1,37 @@
+
+
 #include<bits/stdc++.h>
 using namespace std;
-using ll=long long;
-using ld=long double;
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-#define read freopen ("in.txt","r",stdin);
-#define out freopen ("out.txt","w",stdout);
-#define BLOCK 555
+
+typedef long long int ll;
+const int limit= 3e5+5;
+const int block=700;
+
 
 struct query{
 	int l;
 	int r;
 	int i;
-};
-query Q[300001];
-int ar[300001],ans[300001];
-int fre[300001];
+}Q[limit];
 
-int freOfFre[300001];   ///frequency of frequency array.
+int ar[limit];
+int ans[limit];
+int fre[limit];
+
+int freOfFre[limit];   ///frequency of frequency array.
 int currMax=0;
 
-bool comp(query a,query b)
-{
-	if(a.l/BLOCK!=b.l/BLOCK)
-	return a.l/BLOCK<b.l/BLOCK;
+bool comp(query a,query b){
+
+	if(a.l/block!=b.l/block)
+        return a.l/block<b.l/block;
 
 	return a.r<b.r;
 }
 
-void add(int pos)
-{
+void add(int pos){
+
 	int preF=fre[ar[pos]];
 	fre[ar[pos]]++;
 	int currF=fre[ar[pos]];
@@ -42,8 +45,8 @@ void add(int pos)
 	}
 }
 
-void remove(int pos)
-{
+void remove(int pos){
+
 	int preF=fre[ar[pos]];
 	fre[ar[pos]]--;
 	int currF=fre[ar[pos]];
@@ -58,11 +61,12 @@ void remove(int pos)
 	}
 }
 
-int main()
-{
+int main(){
+
     fast;
 	int n,q;
 	cin>>n>>q;
+
 	for(int i=0;i<n;i++)
 	cin>>ar[i];
 
@@ -76,8 +80,8 @@ int main()
 	sort(Q,Q+q,comp);
 
 	int ML=0,MR=-1;
-	for(int i=0;i<q;i++)
-	{
+	for(int i=0;i<q;i++){
+
 		int L=Q[i].l;
 		int R=Q[i].r;
 
@@ -102,7 +106,8 @@ int main()
 	}
 
 	for(int i=0;i<q;i++)
-	cout<<ans[i]<<endl;
+        cout<<ans[i]<<endl;
 }
+
 
 
