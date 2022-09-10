@@ -1,6 +1,6 @@
 
 
-/// Find maximum prefix in range between [a, b] if less than 0 the 0 is the answer 
+/// Find maximum prefix in range between [a, b] if less than 0 the 0 is the answer
 /// update the k th index with v
 
 #include<bits/stdc++.h>
@@ -13,8 +13,10 @@ const int limit=2e5+5;
 struct Node{
     ll sum;
     ll pref_sum;
-};
-Node st[limit<<2];
+    Node(){
+        sum = pref_sum =0;
+    }
+}st[limit << 2];
 
 ll aa[limit];
 
@@ -60,9 +62,8 @@ Node query(int node,int b,int e,int l,int r){
 
 
     if(b>r || e<l){
-        Node res;
-        res.sum=res.pref_sum=0;
-        return res;
+        Node emptynode;
+        return emptynode;
     }
 
     if(b >= l && e <= r){
