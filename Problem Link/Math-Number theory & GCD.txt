@@ -104,6 +104,8 @@ Done
 
 51. Reduce to zero : https://www.codechef.com/JUNE221B/problems/RED0
 
+52. K-Subarrays : https://www.codechef.com/submit/KSUB                 ///gcd
+
 
 Undone:
 GCD Extreme: https://www.spoj.com/problems/GCDEX/
