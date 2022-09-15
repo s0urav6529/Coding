@@ -69,32 +69,38 @@ int n;
 //    return false;
 //}
 
-void kmp(string t,string p)
-{
-    string s=p+"?"+t;
-    int n=s.size();
+void kmp(string s,string p){
+
+    string ss = p + "?" + s;    /// s is the larger string  & p the searching pattern/word
+    int n=ss.size();
     vector<int> pi(n);
-    for(int i=1;i<n;i++)
-    {
+
+    for(int i=1;i<n;i++){
+
         int j=pi[i-1];
-        while(j>0 && s[i]!=s[j])
+        
+        while(j>0 && ss[i]!=ss[j])
             j = pi[j-1];
 
-        if (s[i]==s[j])
+        if (ss[i]==ss[j])
             j++;
+        
         pi[i] = j;
     }
+    
     int cnt=0;
-    for(int i=p.size();i<n;i++)
-    {
+    
+    for(int i=p.size();i<n;i++){
+
         if(pi[i]==p.size()) cnt++;
     }
+    
     if(cnt) cout<<"YES"<<" "<<cnt<<endl;
     else cout<<"NO"<<endl;
 }
 
-int main()
-{
+int main(){
+    
     fast;
     int tc=1;
     string t,p;
