@@ -68,7 +68,7 @@ Done:
 
 33. Xor-Subsequence (easy version) : https://codeforces.com/problemset/problem/1720/D1
 
-
+34. Zero-One (Hard Version) : https://codeforces.com/problemset/problem/1733/D2
 
 ///Sequence DP
 
