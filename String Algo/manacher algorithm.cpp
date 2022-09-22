@@ -1,3 +1,8 @@
+
+
+/// Manacher's algorithm is used to find the longest palindromic substring in any given string. 
+/// Time complexity is O (n) // n is the lenght of the string s
+
 #include<bits/stdc++.h>
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 using namespace std;
@@ -5,7 +10,7 @@ using namespace std;
 typedef long long int ll;
 typedef unsigned long long int llu;
 constexpr ll MOD=1e9+7;
-const int limit=2e6+5;
+const int limit=2e6+5;      /// limit should be 2 times of string size
 
 ///lps = longest palindromic substring
 vector<int>lps(limit);
