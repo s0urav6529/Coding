@@ -1,4 +1,7 @@
 
+/// Idea : Finding the longest suffix from any index s[i] which is also a proper prefix from s[0]
+
+/// Proper prefix means not the whole sub-string that are started from index s[i]
 
 ///complexity of kmp algorithm is O(n+m) where n is the lenght of the text and m is the lenght of the pattern.
 ///o(m) needed to built the suffix and the perfix array;
@@ -7,13 +10,10 @@
 
 #include<bits/stdc++.h>
 using namespace std;
-using ll=long long;
-using ld=long double;
-#define mod 1000000007
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-#define read freopen ("in.txt","r",stdin);
-#define out freopen ("out.txt","w",stdout);
-#define limit 1000006
+
+typedef long long int ll;
+const int limit=1e6+5;
 int n;
 
 
@@ -71,7 +71,7 @@ int n;
 
 void kmp(string s,string p){
 
-    string ss = p + "?" + s;    /// s is the larger string  & p the searching pattern/word
+    string ss = p + "?" + s;    /// s is the larger text  & p the searching pattern/word
     int n=ss.size();
     vector<int> pi(n);
 
@@ -102,16 +102,12 @@ void kmp(string s,string p){
 int main(){
     
     fast;
-    int tc=1;
-    string t,p;
-    cout<<"Enter the text"<<endl;
-    cin>>t;
-    cout<<"No of query"<<endl;
-    cin>>tc;
-    cout<<"Enter Searching Pattern"<<endl;
-    while(tc--) {
-        cin>>p;
-        kmp(t,p);
+    int q;
+    string s,p;
+    cin>>s >> q;   /// s = text & q = no of queries
+    while(q--) {
+        cin>>p;   /// searching pattern
+        kmp(s,p); 
     }
     return 0;
 }
