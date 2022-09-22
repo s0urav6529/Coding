@@ -1,3 +1,8 @@
+
+/// Finding the longest prefix stated from any index s[i] which is also a proper prefix from index s[0]
+
+/// Time complexity is O(n)
+
 #include<bits/stdc++.h>
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 using namespace std;
