@@ -1,24 +1,27 @@
 ///seive with bool
 
-#define limit 1000008
-bool vis[limit];
+bool vis[limit];   /// limit upto 1e6
 vector<int>prime;
-void seive()
-{
+void seive(){
+	
     vis[0]=vis[1]=1;
+	
     for(int i=4; i<limit; i+=2) vis[i] = 1;
-    for(int i=3; i*i<limit; i+=2)
-    {
+	
+    for(int i=3; i*i<limit; i+=2){
+	    
         if(vis[i]) continue;
-        for(int j=i*i; j<limit; j+=2*i)
-        {
+        for(int j=i*i; j<limit; j+=2*i) {
+		
             vis[j] = 1;
         }
     }
+	
     prime.pb(2);
-    for(int j=3; j<limit; j+=2)
-    if(vis[j]==0)
-        prime.pb(j);
+	
+    for(int j=3; j<limit; j+=2){
+    	if(vis[j]==0) prime.pb(j);
+    }
 }
 
 
