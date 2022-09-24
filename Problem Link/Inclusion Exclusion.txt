@@ -8,4 +8,6 @@
 
 4. NGM2 - Another Game With Numbers : https://www.spoj.com/problems/NGM2/
 
+5. Counting Coprime Pairs : https://cses.fi/problemset/task/2417
+
 
