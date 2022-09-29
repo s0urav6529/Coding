@@ -106,6 +106,8 @@ Done
 
 52. K-Subarrays : https://www.codechef.com/submit/KSUB                 ///gcd
 
+53. Equivalent Numbers : https://www.codechef.com/submit/EQUIVALENT      /// Prime number power
+
 
 Undone:
 GCD Extreme: https://www.spoj.com/problems/GCDEX/
