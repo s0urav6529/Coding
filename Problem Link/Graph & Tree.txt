@@ -53,3 +53,7 @@ Done
 
 25. KATHTHI - KATHTHI :   https://www.spoj.com/problems/KATHTHI/                        /// 0-1BFS
 
+26. Reset K Edges : https://codeforces.com/contest/1739/problem/D
+
+
+
