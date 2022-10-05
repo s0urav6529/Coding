@@ -70,6 +70,8 @@ Done:
 
 34. Zero-One (Hard Version) : https://codeforces.com/problemset/problem/1733/D2
 
+35. Even Number Addicts : https://codeforces.com/contest/1738/problem/C                    ///Game + DP
+
 ///Sequence DP
 
 1. Redistribution : https://atcoder.jp/contests/abc178/tasks/abc178_d
