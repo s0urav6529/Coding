@@ -7,83 +7,85 @@ const int limit=1e5+5;
 
 
 int a[limit];
-int st[4*limit];
-int lazy[4*limit];
+int st[limit << 2] , lazy[limit << 2];
 
 void segment_tree(int node,int b,int e){
 
 	if(b==e){
-		st[node]=a[b];
+		st[node] = a[b];
 		return;
 	}
-	int left=node*2;
-    int right=node*2+1;
+
     int mid=(b+e)/2;
 
-    segment_tree(left,b,mid);
-    segment_tree(right,mid+1,e);
+    segment_tree(node << 1, b, mid);
+    segment_tree(node << 1 | 1 , mid+1, e);
 
-    st[node]=st[left]+st[right];
+    st[node] = st[node << 1] + st[node << 1 | 1];
 }
 
 void update(int node,int b,int e,int l,int r,int val){
 
-    int left=node*2;
-    int right=node*2+1;
+	if(lazy[node] != 0){
 
-	if(lazy[node]!=0){
+		int Update=lazy[node];
 
-		int up=lazy[node];
 		lazy[node]=0;
-		st[node]+=up*(e-b+1);
 
-		if(b!=e)
-            lazy[left]+=up,lazy[right]+=up;
+		st[node] += Update * (e-b+1);
+
+		if(b!=e){
+		    lazy[node << 1] += Update;
+		    lazy[node << 1 | 1] += Update;
+		}
 	}
 
 	if(e<l || b>r) return;
 
 	if(b>=l && e<=r){
 
-		int up=(e-b+1)*val;
-		st[node]+=up;
+		int Update = (e-b+1)*val;
 
-		if(b!=e)
-            lazy[left]+=val,lazy[right]+=val;
+		st[node] += Update;
 
+		if(b!=e) {
+		    lazy[node << 1] += val;
+		    lazy[node << 1 | 1] += val;
+		}
 		return;
 	}
 
     int mid=(b+e)/2;
 
-    update(left,b,mid,l,r,val);
-    update(right,mid+1,e,l,r,val);
+    update(node << 1, b, mid, l, r, val);
+    update(node << 1 | 1, mid+1, e, l, r, val);
 
-    st[node]=st[left]+st[right];
+    st[node]=st[node << 1]+st[node << 1 | 1];
 }
 
 int query(int node,int b,int e,int l,int r){
 
-    int left=node*2;
-    int right=node*2+1;
-
 	if(lazy[node]!=0){
 
-		int up=lazy[node];
-		lazy[node]=0;
-		st[node]+=up*(e-b+1);
+		int Update = lazy[node];
 
-		if(b!=e)
-            lazy[left]+=up,lazy[right]+=up;
+		lazy[node]=0;
+
+		st[node]+=Update * (e-b+1);
+
+		if(b!=e){
+		    lazy[node << 1] += Update;
+		    lazy[node << 1 | 1] += Update;
+		}
 	}
 
 	if(e<l || b>r) return 0;
 
-    if(b>=l && e<=r) return st[node];
+    	if(b>=l && e<=r) return st[node];
 
 	int mid=(b+e)/2;
 
-	return query(left,b,mid,l,r)+query(right,mid+1,e,l,r);
+	return query(node << 1, b, mid, l, r) + query(node << 1 | 1, mid+1, e, l, r);
 }
 
 int main(){
@@ -94,15 +96,18 @@ int main(){
 
     segment_tree(1,1,n);
     //printf("Case %d:\n",t);
+
     while(q--){
 
         int type,l,r,v;
         cin>>type;
+
         if(!type){
             cin>>l>>r>>v;
             update(1,1,n,l,r,v);
 
         }
+
         else{
             cin>>l>>r;
             int ans=query(1,1,n,l,r);
@@ -112,5 +117,4 @@ int main(){
     }
     return 0;
 }
-
 
