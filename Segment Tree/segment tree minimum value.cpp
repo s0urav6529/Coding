@@ -1,69 +1,56 @@
 #include<bits/stdc++.h>
 using namespace std;
-using ll=long long;
-using ld=long double;
-#define mod 1000000007
-#define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-#define read freopen ("in.txt","r",stdin);
-#define out freopen ("out.txt","w",stdout);
-#define mxx 100005
-int n;
-int a[mxx];
-int tree[mxx*4];
+typedef long long int ll;
+const int limit=2e5+5;
 
-void segment_tree(int node,int b,int e)
-{
+int a[limit];
+int st[limit << 2];
+
+void segment_tree(int node,int b,int e){
+
     if(b==e){
-        tree[node]=a[b];
+        st[node] = a[b];
         return;
     }
-    int left=node*2;
-    int right=node*2+1;
 
     int mid=(b+e)/2;
 
-    segment_tree(left,b,mid);
-    segment_tree(right,mid+1,e);
+    segment_tree(node << 1, b, mid);
+    segment_tree(node << 1 |1 , mid+1, e);
 
-    tree[node]=min(tree[left],tree[right]);
+    st[node]=min(st[node << 1],st[node << 1 |1]);
+
 }
-int mn(int node,int b,int e,int x,int y)
-{
-    if(e<x || b>y)
+
+int Minimum_value(int node,int b,int e,int l,int r){
+
+    if(e<l || b>r)
         return 1000;///invalid return
 
-    if(b>=x && e<=y)
-        return tree[node];
-
-    int left=node*2;
-    int right=node*2+1;
+    if(b>=l && e<=r)
+        return st[node];
 
     int mid=(b+e)/2;
-    int Min=1000;
 
-    return min(mn(left,b,mid,x,y),mn(right,mid+1,e,x,y));
+    return min(Minimum_value(node << 1 , b, mid, l, r) , Minimum_value(node << 1 | 1, mid+1, e, l ,r));
 }
 
-int main()
-{
-    fast;
-    int q;
-    cin>>n>>q;
-    for(int i=1;i<=n;i++) //entering the array
-        cin>>a[i];
+int main(){
+
+    int q , n;
+    cin>>n >> q;
+
+    for(int i=1;i<=n;i++)  cin>>a[i];
+
     segment_tree(1,1,n); ///Bulid segment tree
 
     while(q--) {
-        int x,y;
-        cin>>x>>y; ///range
-        cout<<mn(1,1,n,x,y)<<endl;
+        int l,r;
+        cin>>l >> r; ///range
+        cout<<Minimum_value(1,1,n,l,r)<<endl;
     }
     return 0;
 }
-
-
-
-
 
 
 
