@@ -1,53 +1,54 @@
 #include<bits/stdc++.h>
 using namespace std;
-using ll=long long;
-using ld=long double;
-#define mod 1000000007
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-#define read freopen ("in.txt","r",stdin);
-#define out freopen ("out.txt","w",stdout);
-#define mx 100005
-int n;
-int a[mx];
-struct info{
-    int prop,sum;
-}tree[mx*4];
+
+typedef long long int ll;
+const int limit=1e5+5;
+
+int a[limit];
+
+struct Node{
+    int prop;
+    int sum;
+}st[limit << 2];
+
 
 void segment_tree(int node,int b,int e){
 
     if(b==e){
-        tree[node].sum=a[b];
-        tree[node].prop=0;
+        st[node].sum = a[b];
+        st[node].prop=0;
         return;
     }
-    int left=node*2;
-    int right=node*2+1;
+
     int mid=(b+e)/2;
 
-    segment_tree(left,b,mid);
-    segment_tree(right,mid+1,e);
+    segment_tree(node << 1 , b, mid);
+    segment_tree(node << 1 | 1, mid+1, e);
 
-    tree[node].sum=tree[left].sum+tree[right].sum;
-    tree[node].prop=0;
+    st[node].sum=st[node << 1].sum + st[node << 1 | 1].sum;
+
+    st[node].prop=0;
 }
 
-void update(int node,int b,int e,int l,int r,int x){
+void update(int node,int b,int e,int l,int r,int val){
 
     if(e<l || b>r) return;
 
     if(b>=l && e<=r){
-        tree[node].sum+=((e-b+1)*x);
-        tree[node].prop+=x;
+
+        st[node].sum += ((e-b+1)*val);
+        st[node].prop += val;
         return;
+
     }
 
-    int left=node*2;
-    int right=node*2+1;
     int mid=(b+e)/2;
 
-    update(left,b,mid,l,r,x);
-    update(right,mid+1,e,l,r,x);
-    tree[node].sum=tree[left].sum+tree[right].sum+(e-b+1)*tree[node].prop;
+    update(node << 1, b, mid, l, r, val);
+    update(node << 1 | 1, mid+1, e, l, r, val);
+
+    st[node].sum = st[node << 1].sum + st[node << 1 | 1].sum + (e-b+1 )*st[node].prop;
 
 }
 int query(int node,int b,int e,int l,int r,int carry){
@@ -55,37 +56,37 @@ int query(int node,int b,int e,int l,int r,int carry){
     if(e<l || b>r) return 0;
 
     if(b>=l && e<=r){
-        return tree[node].sum+carry*(e-b+1);
+        return st[node].sum + carry*(e-b+1);
     }
 
-    int left_c=node*2;
-    int right_c=node*2+1;
     int mid=(b+e)/2;
 
-    int q1=query(left_c,b,mid,l,r,carry+tree[node].prop);
-    int q2=query(right_c,mid+1,b,l,r,carry+tree[node].prop);
+    int q1 = query(node << 1 , b, mid, l, r, carry+st[node].prop);
+
+    int q2 = query(node << 1 | 1, mid+1, b, l, r, carry+st[node].prop);
+
     return q1+q2;
 }
 
-int main()
-{
+int main(){
+
     fast;
-    int q;
-    cin>>n>>q;
-    for(int i=1;i<=n;i++)
-        cin>>a[i];
+    int q , n;
+    cin>> n >> q;
+    for(int i=1;i<=n;i++) cin>>a[i];
+
     segment_tree(1,1,n); ///built the segment tree
+
     while(q--){
         int l,r,val;
+
         cin>>l>>r>>val;
+
         update(1,1,n,l,r,val);  ///update the range
+
         cout<<query(1,1,n,l,r,0)<<endl; ///return the sum of the range
+
     }
     return 0;
 }
-
-
-
-
-
 
