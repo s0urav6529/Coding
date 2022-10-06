@@ -1,7 +1,7 @@
 
 
 
-/// Minimum Index where Q_sum bigger.
+/// In this problem we need to find minimum Index where query wanted sum bigger.
 
 
 #include<bits/stdc++.h>
@@ -17,24 +17,24 @@ const int limit=1e5+5;
 int a[limit];
 int BIT[limit];
 
-void update(int idx,int val,int n){
+void update(int index,int val,int n){
 
-    while(idx<=n){
+    while(index <= n){
 
-        BIT[idx]+=val;
-        idx+=(idx & -idx);
+        BIT[index] += val;
+        index += (index & -index);
 
     }
 }
 
-int answer(int idx){
+int answer(int index){
 
-    int sum=0;
+    int sum = 0;
 
-    while(idx>0){
+    while(index > 0){
 
-        sum+=BIT[idx];
-        idx-=(idx & -idx);
+        sum += BIT[index];
+        index -= (index & -index);
     }
     return sum;
 }
@@ -54,31 +54,38 @@ int main(){
         string s;
         cin>>s;
 
-        if(s=="add"){     /// Adding something
+        if(s=="add"){     /// Adding something to this position
             ll pos,add;
-            cin>>pos>>add;
+
+            cin>> pos >> add;
 
             a[pos] += add;
+
             update(pos , add , n);
         }
-        else if(s=="assign"){   /// Assign value
+        else if(s=="assign"){   /// Assign value to this position
             ll pos,val;
-            cin>>pos>>val;
+
+            cin>>pos >> val;
+
             update( pos, -a[pos] , n); ///clear first
+
             update(pos , val , n ); /// assign now
+
             a[pos]=val;
         }
         else {
             ll qsum;
+
             cin>>qsum;
 
-            ll cur_jump=0,cursum=0;
+            ll cur_jump=0 , cursum=0;
 
-            for(int jump=20;jump >= 0;jump--){
+            for(int jump=20; jump >= 0 ;jump--){
 
                 ll next_jump = cur_jump + (1 << jump);
 
-                if(next_jump <= n && (cursum + BIT[next_jump])<qsum){
+                if(next_jump <= n && (cursum + BIT[next_jump]) < qsum){
 
                     cur_jump = next_jump;
 
