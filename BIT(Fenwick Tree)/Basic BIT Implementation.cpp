@@ -6,26 +6,26 @@ const int limit=2e5+5;
 
 
 int a[limit];
-int ftree[limit];
+int BIT[limit];
 
-void update(int idx,int val,int n){
+void update(int index,int val,int n){
 
-    while(idx<=n){
+    while(index <= n){
 
-        ftree[idx]+=val;
-        idx+=(idx & -idx);
+        BIT[index] += val;
+        index += (index & -index);
 
     }
 }
 
-int answer(int idx){
+int answer(int index){
 
-    int sum=0;
+    int sum = 0;
 
-    while(idx>0){
+    while(index > 0){
 
-        sum+=ftree[idx];
-        idx-=(idx & -idx);
+        sum += BIT[index];
+        index -= (index & -index);
     }
     return sum;
 }
@@ -33,7 +33,7 @@ int answer(int idx){
 int main(){
     fast;
     int n,q;
-    cin>>n>>q;
+    cin>> n >> q;
 
     for(int i=1;i<=n;i++){
         cin>>a[i];
@@ -41,11 +41,10 @@ int main(){
     }
     while(q--){
         int l,r;
-        cin>>l>>r;
+        cin>>l>>r;   /// sum in range
         cout<<answer(r)-answer(l-1)<<endl;
     }
     return 0;
 }
-
 
 
