@@ -12,12 +12,12 @@ const int limit=2e5+5;
 
 int n,q;
 ll a[limit];
-ll tree[limit << 2];
+ll st[limit << 2];
 
 void segment_tree(int node,int b,int e){
 
     if(b==e){
-        tree[node]=a[b];
+        st[node] = a[b];
         return;
     }
 
@@ -26,7 +26,7 @@ void segment_tree(int node,int b,int e){
     segment_tree(node << 1, b,  mid);
     segment_tree(node << 1 | 1, mid+1, e);
 
-    tree[node]=__gcd(tree[node  << 1],tree[node << 1 | 1]);
+    st[node]=__gcd(st[node  << 1],st[node << 1 | 1]);
 }
 
 ll find_gcd(int node,int b,int e,int l,int r){
@@ -35,7 +35,7 @@ ll find_gcd(int node,int b,int e,int l,int r){
         return 0;
 
     if(b>=l && e<=r)   ///Relavent range
-        return tree[node];
+        return st[node];
 
     int mid=(b+e)/2;
 
@@ -47,7 +47,7 @@ ll find_gcd(int node,int b,int e,int l,int r){
 void update_node(int node,int b,int e,int index){
 
     if(b==e){
-        tree[node]=a[index];
+        st[node] = a[index];
         return;
     }
 
@@ -56,7 +56,7 @@ void update_node(int node,int b,int e,int index){
     if(index<=mid) update_node(node << 1 ,b ,mid, index);
     else update_node(node << 1 | 1, mid+1, e, index);
 
-    tree[node]=__gcd(tree[node << 1],tree[node << 1 | 1]);
+    st[node]=__gcd(st[node << 1],st[node << 1 | 1]);
 }
 
 int main(){
