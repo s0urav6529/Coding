@@ -1,12 +1,9 @@
 #include<bits/stdc++.h>
 using namespace std;
-using ll=long long;
-using ld=long double;
-#define mod 1000000007
+
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-#define read freopen ("in.txt","r",stdin);
-#define out freopen ("out.txt","w",stdout);
 const int limit=2e5+5;
+typedef long long int ll;
 
 int a[limit];
 int st[limit << 2];
