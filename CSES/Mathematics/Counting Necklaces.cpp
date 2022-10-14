@@ -1,3 +1,9 @@
+
+
+/// Using Burnside's lemma or orbit counting theorem 
+
+/// Blog : https://cp-algorithms.com/combinatorics/burnside.html#application-coloring-necklaces
+
 #include<bits/stdc++.h>
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 using namespace std;
