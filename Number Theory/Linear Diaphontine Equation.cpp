@@ -1,5 +1,6 @@
-///Linear Diaphontine Equation
-///which is (ax+by=c) and find x and y of the solution
+/// Linear Diaphontine Equation
+/// which is (ax+by=c) where c = gcd(a,b) then
+/// find x and y of the solution 
 
 
 int EEA(int a,int b,int &x,int &y){
