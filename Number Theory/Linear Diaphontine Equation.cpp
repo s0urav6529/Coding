@@ -3,7 +3,7 @@
 /// find x and y of the solution 
 
 
-int EEA(int a,int b,int &x,int &y){
+int Extended_Euclidian_Algorithm(int a,int b,int &x,int &y){
 
     if(b==0){
         x=1;
@@ -24,7 +24,7 @@ int EEA(int a,int b,int &x,int &y){
 bool solution_exists(int a,int b,int c,int &x,int &y){  ///checking the solution exists or not
 
     int x0,y0;
-    int g=EEA(abs(a),abs(b),x0,y0);
+    int g=Extended_Euclidian_Algorithm(abs(a),abs(b),x0,y0);
 
     if(c%g){
         ///solution doesnot exists because c%d!=0
@@ -50,7 +50,6 @@ int main(){
         cout<<"No Solution Exists"<<endl;
     }
     else{
-
         ///solution of x and y
         cout<<x<<"   "<<y<<endl;
     }
