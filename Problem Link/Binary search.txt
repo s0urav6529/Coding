@@ -17,5 +17,6 @@
 
 8. Reset K Edges : https://codeforces.com/contest/1739/problem/D
 
+9. Scuza : https://codeforces.com/contest/1742/problem/E
 
 
