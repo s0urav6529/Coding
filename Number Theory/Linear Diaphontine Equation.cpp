@@ -1,5 +1,5 @@
 /// Linear Diaphontine Equation
-/// which is (ax+by=c) where c = gcd(a,b) then
+/// which is (ax+by=c) where c = gcd(a,b) then exits a solution otherwise no solution
 /// find x and y of the solution 
 
 
@@ -12,9 +12,9 @@ int Extended_Euclidian_Algorithm(int a,int b,int &x,int &y){
     }
 
     int x1,y1;
-    int g=EEA(b,a%b,x1,y1);
+    int g=Extended_Euclidian_Algorithm(b,a%b,x1,y1);
 
-    ///solution of x and y of EEA;
+    ///solution of x and y of Extended_Euclidian_Algorithm;
     x=y1;
     y=x1-y1*(a/b);
 
@@ -27,11 +27,11 @@ bool solution_exists(int a,int b,int c,int &x,int &y){  ///checking the solution
     int g=Extended_Euclidian_Algorithm(abs(a),abs(b),x0,y0);
 
     if(c%g){
-        ///solution doesnot exists because c%d!=0
+        ///solution doesnot exists because c%g!=0
         return false;
     }
 
-    ///solution of x and y in LDA
+    ///solution of x and y in LDE
 
     x=x0 * c/g;
     y=y0 * c/g;
