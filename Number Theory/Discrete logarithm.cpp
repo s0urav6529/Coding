@@ -3,14 +3,17 @@
 
 /// Find the value of x where x is as minimum as possile (given a , b & m)
 
-/// we can express x = n*p - q
+/// we can express x = n*p - q & for finding minimum x we need to minimize->p & maximize->q since n is constant.
 
-/// n = sqrt(m)+1  &&  1<=p<=sqrt(m)  &&  0<=q<sqrt(m)
+/// where ->>> n = sqrt(m)+1  &&  1<=p<=sqrt(m)  &&  0<=q<sqrt(m)
 
 /// putting x = n*p-q in the equation a^(n*p-q)  = b(mod m)
+
 /// a^(n*p) % m == ( b * a^q ) % m
 
 /// O(sqrt(m)*log(m)) or O(sqrt(m))
+
+/// Khata vlo kore likha ache 
 
 
 #include<bits/stdc++.h>
@@ -36,8 +39,6 @@ int main(){
     unordered_map<ll,ll>val;
 
     /// calculating ( b*a^q ) % m
-
-
     for(ll q=0 , cur=b; q<n ;q++){
 
         val[cur] = q;  /// storing maximum q
@@ -64,6 +65,8 @@ int main(){
 
     return 0;
 }
+
+
 
 
 
