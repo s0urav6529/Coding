@@ -115,6 +115,7 @@ Done:
 
 58. Non Zero Xor : https://www.codechef.com/START55B/problems/NZXOR
 
+59. Orray : https://codeforces.com/contest/1742/problem/G
 
 
 
