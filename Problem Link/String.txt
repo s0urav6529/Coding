@@ -28,7 +28,7 @@
 
 14.  MUH and Cube Walls : https://codeforces.com/problemset/problem/471/D                  /// KMP
 
-
+15. Smaller : https://codeforces.com/contest/1742/problem/F
 
 
 
