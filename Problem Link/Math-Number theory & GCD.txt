@@ -108,6 +108,8 @@ Done
 
 53. Equivalent Numbers : https://www.codechef.com/submit/EQUIVALENT      /// Prime number power
 
+54. Coprime : https://codeforces.com/contest/1742/problem/D
+
 
 Undone:
 GCD Extreme: https://www.spoj.com/problems/GCDEX/
