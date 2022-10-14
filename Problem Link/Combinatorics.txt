@@ -32,6 +32,10 @@ Done:
 
 11. Tree Coloring : https://www.codechef.com/submit/TREECLR                                             ///Tree + combinatorics
 
+12. Counting Necklaces : https://cses.fi/problemset/task/2209                     /// Burnside's theorem or orbit counting theorem
+
+14. Fibonacci Numbers :  https://cses.fi/problemset/task/1722                     /// DP + blog : https://codeforces.com/blog/entry/14516
+
 Not Done:
 
 Maximum Subsequence Value: https://codeforces.com/problemset/problem/1365/E 
