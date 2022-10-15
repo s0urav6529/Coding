@@ -119,5 +119,8 @@ Done:
 
 60. Adding Powers : https://codeforces.com/problemset/problem/1312/C
 
+61. Maximum AND : https://codeforces.com/contest/1721/problem/D
+
+
 
 
