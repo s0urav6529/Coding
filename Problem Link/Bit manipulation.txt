@@ -117,5 +117,7 @@ Done:
 
 59. Orray : https://codeforces.com/contest/1742/problem/G
 
+60. Adding Powers : https://codeforces.com/problemset/problem/1312/C
+
 
 
