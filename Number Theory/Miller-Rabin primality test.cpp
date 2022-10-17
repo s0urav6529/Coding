@@ -17,73 +17,53 @@ using namespace std;
 typedef long long int ll;
 typedef unsigned long long int llu;
 const int limit=1e6+5;
+using u64 = uint64_t;
+using u128 = __uint128_t;
 
-/// This 12 base gives me the 100% accuracy of this algo
-ll base[]={2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37};
 
-ll Mod(ll x,ll MOD){
-    return ((x%MOD + MOD)%MOD);
-}
-
-ll mulmod(ll a,ll b,ll MOD){
-    return Mod(Mod(a,MOD)*Mod(b,MOD),MOD);
-}
-
-ll Binary_expo(ll a,ll p,ll MOD){
-
-	ll res=1;
-	while(p){
-
-		if(p & 1)
-		res=mulmod(res,a,MOD);
-		p/=2;
-		a=mulmod(a,a,MOD);
-	}
-	return res%MOD;
-}
-
-bool is_prime(ll n, ll a, ll s, ll d) {
-
-    ll x = Binary_expo(a, d, n);
-
-    if (x == 1 || x == n-1){
-        return true;
+u64 binpower(u64 base, u64 e, u64 mod) {
+    u64 result = 1;
+    base %= mod;
+    while (e) {
+        if (e & 1)
+            result = (u128)result * base % mod;
+        base = (u128)base * base % mod;
+        e >>= 1;
     }
+    return result;
+}
 
-    for (int j = 1; j < s; j++) {
-        x = (x*x) % n;
-
-        if (x == n-1){
-            return true;
-        }
+bool check_composite(u64 n, u64 a, u64 d, int s) {
+    u64 x = binpower(a, d, n);
+    if (x == 1 || x == n - 1)
+        return false;
+    for (int r = 1; r < s; r++) {
+        x = (u128)x * x % n;
+        if (x == n - 1)
+            return false;
     }
-    return false;
+    return true;
 };
 
-bool MillerRabin(ll n) { /// returns true if n is prime, else returns false.
-
+bool MillerRabin(u64 n) {
     if (n < 2)
         return false;
 
-    ll s = 0;
-    ll d = n-1;
-
+    int r = 0;
+    u64 d = n - 1;
     while ((d & 1) == 0) {
         d >>= 1;
-        s++;
+        r++;
     }
 
-    for (int i=0;i<12;i++) {
-
-        if (n == base[i]){
+    /// This 12 base gives me the 100% accuracy of this algo
+    for (int a : {2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37}) {
+        if (n == a)
             return true;
-        }
-
-        if (is_prime(n, base[i], s, d)){
-            return true;
-        }
+        if (check_composite(n, a, d, r))
+            return false;
     }
-    return false;
+    return true;
 }
 
 int main(){
