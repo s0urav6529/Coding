@@ -3,7 +3,7 @@
 
 /// Return (d,x,y) such that ax + by = gcd(a,b) = d
 
-
+/// It always returns the minimal x & y
 
 tuple<ll, ll, ll> exgcd(ll a , ll b){
 
