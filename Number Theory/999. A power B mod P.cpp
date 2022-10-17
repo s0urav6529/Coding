@@ -1,7 +1,7 @@
 
 
 
-/// Find A^B mod P   , Where A<=1e9 , B = 5000 digits && P=1e9+7.
+/// Find  (A^B)%P = ?   , Where A<=1e9 , B = 5000 digits && P=1e9+7.
 
 /// Here  since B is large and cannot fit in ll so we can represents B = (p-1)*q + r
 
