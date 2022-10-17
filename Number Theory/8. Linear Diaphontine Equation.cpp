@@ -23,7 +23,7 @@ tuple<ll, ll, ll> exgcd(ll a , ll b){
 
 /// If (c%d>0) no solution otherwise solution exits
 
-tuple<int,int> diaphontine(ll a, ll b, ll c){
+tuple<ll,ll> diaphontine(ll a, ll b, ll c){
 
     auto[d, x , y] =exgcd(a , b);
 
