@@ -1,57 +1,58 @@
 /// Linear Diaphontine Equation
-/// which is (ax+by=c) where c = gcd(a,b) then exits a solution otherwise no solution
+/// which is (ax+by=c) where c = k*gcd(a,b) [ k = 1,2,....] then exits a solution otherwise no solution
 /// find x and y of the solution 
 
 
-int Extended_Euclidian_Algorithm(int a,int b,int &x,int &y){
 
-    if(b==0){
-        x=1;
-        y=0;
-        return a; ///returning GCD
+bool no_solution = false;
+
+/// Return (d,x,y) such that ax + by = gcd(a,b) = d
+
+tuple<ll, ll, ll> exgcd(ll a , ll b){
+
+    if(b == 0){
+        return {a, 1 , 0};
     }
+    auto[d, _x, _y] = exgcd(b, a%b);
 
-    int x1,y1;
-    int g=Extended_Euclidian_Algorithm(b,a%b,x1,y1);
+    ll x = _y;
+    ll y = _x -(a/b)*_y;
 
-    ///solution of x and y of Extended_Euclidian_Algorithm;
-    x=y1;
-    y=x1-y1*(a/b);
-
-    return g; ///returning GCD
-
+    return {d, x, y};
 }
-bool solution_exists(int a,int b,int c,int &x,int &y){  ///checking the solution exists or not
 
-    int x0,y0;
-    int g=Extended_Euclidian_Algorithm(abs(a),abs(b),x0,y0);
+/// If (c%d>0) no solution otherwise solution exits
 
-    if(c%g){
-        ///solution doesnot exists because c%g!=0
-        return false;
+tuple<int,int> diaphontine(ll a, ll b, ll c){
+
+    auto[d, x , y] =exgcd(a , b);
+
+    if(c % d){
+        no_solution=true;
+        return {-1,-1}; /// Invalid returns
     }
-
-    ///solution of x and y in LDE
-
-    x=x0 * c/g;
-    y=y0 * c/g;
-
-    if(a<0) x=-x;
-    if(b<0) y=-y;
-    return true;
+    else {
+        ll k = c/d;
+        return {x*k , y*k};
+    }
 }
+
 int main(){
 
-    int a,b,c,x,y;
-    cin>>a>>b>>c;
+    fast;
+    ll a, b ,c;
 
-    if(solution_exists(a,b,c,x,y)==false){
+    cin >> a >> b >> c;
 
-        cout<<"No Solution Exists"<<endl;
+    auto[x,y] = diaphontine(a, b , c);
+
+    if(no_solution){
+        cout<<"No Solution Exits"<<endl;
     }
-    else{
-        ///solution of x and y
-        cout<<x<<"   "<<y<<endl;
-    }
+    else cout<< x <<" "<< y<<endl;
 
+    return 0;
 }
+
+
+
