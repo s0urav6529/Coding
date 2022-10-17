@@ -24,7 +24,7 @@ int countdivisor(int n)   ///first pre-load the prime array using seive
 
 
 
-///Number of common divisor of two number O(log(n)^2)
+///  Number of common divisor of two number O(log(n)^2)
 
 map<ll,ll>PF;
 
@@ -69,7 +69,7 @@ void solution()
 
 
 
-///summation of Divisor of a number including this number as a divisor and excluding 1 as a divisor
+///Summation of Divisor of a number including this number as a divisor and excluding 1 as a divisor
 
 bool isprime[1000005];
 int prime[1000005];
@@ -105,6 +105,12 @@ int summation(int n)
 
     return total;
 }
+
+
+
+
+
+
 
 
 
