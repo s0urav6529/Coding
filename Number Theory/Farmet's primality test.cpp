@@ -1,20 +1,3 @@
-///primality test O(sqrt(n))
-
-int n;
-cin>>n;
-
-for(int i=2;i*i<=n;i++)
-{
-    if(n%i==0)
-    {
-        cout<<"Not prime";
-        return;
-    }
-}
-cout<<"prime";
-
-return;
-
 
 ///Primality test with farmet little theorem O(logn)
 
@@ -62,3 +45,7 @@ return;
         }
         return true;
     }
+
+
+
+
