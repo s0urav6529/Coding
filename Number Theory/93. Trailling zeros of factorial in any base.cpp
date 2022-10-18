@@ -1,10 +1,17 @@
-#include<bits/stdc++.h>
-#define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-using namespace std;
+
+
+
+Blog 1: https://qr.ae/pvVzsj
+Blog 2: https://forthright48.com/number-of-trailing-zeroes-of-factorial/
+
+/// It finda the number of trilling zero's of N! in any base
+/// Time Complexity : O(nlog(n)log(n)  + log(n)*log(n))
+                         seive             algorithm
+                         
+                         
+********* Algorithm Starts ************                         
 
 typedef long long int ll;
-typedef unsigned long long int llu;
-constexpr ll MOD=1e9+7;
 const int limit=1e6+5;
 
 bool vis[limit];
@@ -42,20 +49,19 @@ int main(){
         ll n,base;
 
         cin >> n >> base;
-
+        
         vector<pair<ll,ll>>factors;
 
         for(int i=0 ; prime[i]*prime[i] <= base ;i++){
 
             bool ok=false;
             ll cnt = 0;
-
+            
             while(base%prime[i] == 0){
 
                 base/=prime[i];
                 cnt++;
                 ok=true;
-
             }
             if(ok){
                 factors.push_back({prime[i],cnt});
@@ -78,20 +84,16 @@ int main(){
                 denominator *= number;
 
             }
-
-            //cout << number << " " <<occ <<" " << zeros <<endl;
-
             Tzeros = min(Tzeros , zeros/occ);
-
         }
-
         cout << Tzeros <<endl;
-
     }
 
 
     return 0;
 }
+
+
 
 
 
