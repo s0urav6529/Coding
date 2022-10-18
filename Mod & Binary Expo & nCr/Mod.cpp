@@ -22,10 +22,11 @@ ll Binary_expo(ll a,ll p){
 	ll res=1;
 	while(p){
 
-		if(p & 1)
-		res=mulmod(res,a);
-		p/=2;
+		if(p & 1){
+		   res=mulmod(res,a);
+		}
 		a=mulmod(a,a);
+		p = (p >> 1);
 	}
 	return res%MOD;
 }
