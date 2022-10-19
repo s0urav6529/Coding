@@ -72,6 +72,8 @@ Done:
 
 35. Even Number Addicts : https://codeforces.com/contest/1738/problem/C                    ///Game + DP
 
+36. Save the Magazines : https://codeforces.com/contest/1743/problem/C
+
 ///Sequence DP
 
 1. Redistribution : https://atcoder.jp/contests/abc178/tasks/abc178_d
