@@ -1,10 +1,6 @@
-#include<bits/stdc++.h>
-#define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-using namespace std;
 
-typedef long long int ll;
-typedef unsigned long long int llu;
-constexpr ll MOD=1e9+7;
+Blog  : https://forthright48.com/lucas-theorem-proof-and-applications/
+
 const int limit=1e5+5;
 
 ll fact[limit], inv_f[limit];
