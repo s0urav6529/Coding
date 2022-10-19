@@ -110,6 +110,10 @@ Done
 
 54. Coprime : https://codeforces.com/contest/1742/problem/D
 
+55. Divisibility by 2^n : https://codeforces.com/contest/1744/problem/D
+
+56. Divisible Numbers (easy version) : https://codeforces.com/contest/1744/problem/E1
+
 
 Undone:
 GCD Extreme: https://www.spoj.com/problems/GCDEX/
