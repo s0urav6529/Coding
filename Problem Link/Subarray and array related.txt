@@ -9,3 +9,7 @@
 
 3. Subarrays with length : https://www.codechef.com/submit-v2/SUBARRAYLEN                   ///No of subarray that has a number that equal to lenght
 
+4. Weird Subarrays : https://www.codechef.com/submit/WEIRDSUBARR
+
+
+
