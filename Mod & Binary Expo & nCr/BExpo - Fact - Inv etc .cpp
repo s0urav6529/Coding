@@ -60,12 +60,47 @@ void range_mod_inverse(){
 //// ************  nCr **********************    Time complexity O(log(n))
 
 ll nCr(ll n,ll r){
-
+    
+    if(r>n) return 0;
+    
     ll numerator= fact[n];
     ll denominator = mulmod(fact[r],fact[n-r]);
     return mulmod(numerator, Binary_expo(denominator,MOD-2));
 	
 }
+
+
+/// ************* factorial  & Inverse factorial of a certain range ********** Time complexity O(n)
+
+ll fact[limit], inv_f[limit];
+
+void precompute(ll n, ll mod) {
+
+  /// first calucalte i^(-1)
+  inv_f[0] = inv_f[1] = 1;
+  for(int i = 2; i <= n; i++){
+    inv_f[i] = mod - 1LL * (mod / i) * inv_f[mod % i] % mod;
+  }
+
+  /// Calculate Inverse factorial (i^(-1))!
+  for(int i = 2; i <= n; i++){
+     inv_f[i] = (1LL * inv_f[i] * inv_f[i-1]) % mod;
+  }
+
+  /// Calculate factorial i!
+  fact[0] = fact[1] = 1;
+  for(int i = 2; i <= n; i++){
+    fact[i] = ( 1LL * fact[i-1] * i) % mod;
+  }
+
+}
+
+ll nCr(ll n, ll r, ll mod) {
+  if(r > n) return 0;
+  return (((1LL * fact[n] * inv_f[n-r]) % mod) * inv_f[r]) % mod;
+}
+
+//// *************** ***********************
 
 
 
