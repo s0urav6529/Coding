@@ -87,12 +87,6 @@ void precompute(ll n, ll mod) {
      inv_f[i] = (1LL * inv_f[i] * inv_f[i-1]) % mod;
   }
 
-  /// Calculate factorial i!
-  fact[0] = fact[1] = 1;
-  for(int i = 2; i <= n; i++){
-    fact[i] = ( 1LL * fact[i-1] * i) % mod;
-  }
-
 }
 
 ll nCr(ll n, ll r, ll mod) {
