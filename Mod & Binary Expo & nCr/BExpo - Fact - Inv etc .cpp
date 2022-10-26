@@ -19,14 +19,14 @@ ll mulmod(ll a,ll b){
 
 ll Binary_expo(ll a,ll p){
 
-	ll res=1;
+ 	ll res=1;
 	while(p){
 
-		if(p & 1){
-		   res=mulmod(res,a);
-		}
-		a=mulmod(a,a);
-		p = (p >> 1);
+	    if(p & 1){
+		res=mulmod(res,a);
+	    }
+	    a=mulmod(a,a);
+	    p = (p >> 1);
 	}
 	return res%MOD;
 }
@@ -69,22 +69,41 @@ ll nCr(ll n,ll r){
 	
 }
 
+   ****** for Handling without mod ******
+
+ll nCr(ll n,ll r) {
+    ll res=1;
+
+    if(r>n) return 0;
+
+    if(r > (n-r)) r=n-r;
+
+    for(ll i=1;i<=r;i++){
+        res*=(n-i+1);
+        res/=i;
+    }
+    return res;
+}
+
+
 
 /// ************* factorial  & Inverse factorial of a certain range ********** Time complexity O(n)
 
 ll fact[limit], inv_f[limit];
 
-void precompute(ll n, ll mod) {
+void precompute() {
 
   /// first calucalte i^(-1)
   inv_f[0] = inv_f[1] = 1;
-  for(int i = 2; i <= n; i++){
-    inv_f[i] = mod - 1LL * (mod / i) * inv_f[mod % i] % mod;
+  for(int i = 2; i < limit; i++){
+       inv_f[i] = MOD - 1LL * (MOD / i) * inv_f[MOD % i] % MOD;
   }
 
-  /// Calculate Inverse factorial (i^(-1))!
-  for(int i = 2; i <= n; i++){
-     inv_f[i] = (1LL * inv_f[i] * inv_f[i-1]) % mod;
+  /// Calculate factorial & Inverse factorial (i^(-1))!
+  fact[0] = fact[1] = 1;
+  for(int i = 2; i < limit; i++){
+       fact[i] = (1LL * fact[i-1] * i) % MOD;
+       inv_f[i] = (1LL * inv_f[i] * inv_f[i-1]) % MOD;
   }
 
 }
