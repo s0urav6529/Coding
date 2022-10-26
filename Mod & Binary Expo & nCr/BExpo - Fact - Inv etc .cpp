@@ -108,10 +108,11 @@ void precompute() {
 
 }
 
-ll nCr(ll n, ll r, ll mod) {
-  if(r > n) return 0;
-  return (((1LL * fact[n] * inv_f[n-r]) % mod) * inv_f[r]) % mod;
+ll nCr(ll n, ll r) {
+    if(r > n) return 0;
+    return (((1LL * fact[n] * inv_f[n-r]) % MOD) * inv_f[r]) % MOD;
 }
+
 
 //// *************** ***********************
 
