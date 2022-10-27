@@ -1,4 +1,8 @@
 
+
+Find the number of integers from [1 - N] are divisible by a set of prime number.
+
+
 #include<bits/stdc++.h>
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 using namespace std;
