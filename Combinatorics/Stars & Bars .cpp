@@ -1,6 +1,10 @@
 
 
-//link : https://cp-algorithms.com/combinatorics/stars_and_bars.html
+Other variations of stars & Bars theorem
+blog : https://cp-algorithms.com/combinatorics/stars_and_bars.html
+blog : https://forthright48.com/stars-and-bars-theorem/
+
+
 
 #include<bits/stdc++.h>
 using namespace std;
