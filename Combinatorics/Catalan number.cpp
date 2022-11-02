@@ -1,9 +1,12 @@
 
 
+Variations of catalan numbers
 
-blog : https://mathcircle.berkeley.edu/sites/default/files/BMC6/pdf0607/catalan.pdf
-
-blog : https://cp-algorithms.com/combinatorics/catalan-numbers.html
+Blog :
+https://en.wikipedia.org/wiki/Catalan_number
+https://brilliant.org/wiki/catalan-numbers/
+https://mathcircle.berkeley.edu/sites/default/files/BMC6/pdf0607/catalan.pdf
+https://cp-algorithms.com/combinatorics/catalan-numbers.html
 
 
 
