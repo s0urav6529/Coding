@@ -114,6 +114,8 @@ Done
 
 56. Divisible Numbers (easy version) : https://codeforces.com/contest/1744/problem/E1
 
+57.  Divide by 2 or 3 : https://atcoder.jp/contests/abc276/tasks/abc276_d
+
 
 Undone:
 GCD Extreme: https://www.spoj.com/problems/GCDEX/
