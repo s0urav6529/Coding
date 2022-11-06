@@ -121,6 +121,8 @@ Done:
 
 61. Maximum AND : https://codeforces.com/contest/1721/problem/D
 
+62. Yet Another Problem : https://codeforces.com/contest/1747/problem/D   /// query + XOR
+
 
 
 
