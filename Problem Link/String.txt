@@ -26,9 +26,11 @@
 
 13. Pattern Find : https://www.spoj.com/problems/NAJPF/                                /// KMP
 
-14.  MUH and Cube Walls : https://codeforces.com/problemset/problem/471/D                  /// KMP
+14. MUH and Cube Walls : https://codeforces.com/problemset/problem/471/D                  /// KMP
 
 15. Smaller : https://codeforces.com/contest/1742/problem/F
+
+16. Complementary XOR : https://codeforces.com/contest/1750/problem/C
 
 
 
