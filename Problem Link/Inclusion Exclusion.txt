@@ -10,4 +10,5 @@
 
 5. Counting Coprime Pairs : https://cses.fi/problemset/task/2417
 
+6. Count GCD : https://codeforces.com/contest/1750/problem/D
 
