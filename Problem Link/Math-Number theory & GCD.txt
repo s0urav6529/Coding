@@ -116,6 +116,8 @@ Done
 
 57.  Divide by 2 or 3 : https://atcoder.jp/contests/abc276/tasks/abc276_d
 
+58. Count GCD : https://codeforces.com/contest/1750/problem/D                       ///GCD+ Inclusion Exclusion
+
 
 Undone:
 GCD Extreme: https://www.spoj.com/problems/GCDEX/
