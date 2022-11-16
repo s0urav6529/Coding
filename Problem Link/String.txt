@@ -32,5 +32,5 @@
 
 16. Complementary XOR : https://codeforces.com/contest/1750/problem/C
 
-
+17. Diverse Substrings : https://codeforces.com/contest/1748/problem/B
 
