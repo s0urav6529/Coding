@@ -123,6 +123,6 @@ Done:
 
 62. Yet Another Problem : https://codeforces.com/contest/1747/problem/D   /// query + XOR
 
-
+63. Binod : https://www.codechef.com/problems/BIN_OD
 
 
