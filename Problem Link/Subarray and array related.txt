@@ -11,5 +11,6 @@
 
 4. Weird Subarrays : https://www.codechef.com/submit/WEIRDSUBARR
 
+5. Zero-Sum Prefixes : https://codeforces.com/contest/1748/problem/C
 
 
