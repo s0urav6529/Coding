@@ -57,5 +57,6 @@ Done
 
 27. Round Trip : https://atcoder.jp/contests/abc276/tasks/abc276_e
 
+28. SlavicG's Favorite Problem : https://codeforces.com/contest/1760/problem/G
 
 
