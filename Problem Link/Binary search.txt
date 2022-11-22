@@ -19,4 +19,6 @@
 
 9. Scuza : https://codeforces.com/contest/1742/problem/E
 
+10. Quests : https://codeforces.com/contest/1760/problem/F
+
 
