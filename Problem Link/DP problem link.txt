@@ -74,6 +74,12 @@ Done:
 
 36. Save the Magazines : https://codeforces.com/contest/1743/problem/C
 
+37. Leaping Tak : https://atcoder.jp/contests/abc179/tasks/abc179_d
+
+38. Wavio Sequence : https://lightoj.com/problem/wavio-sequence
+
+
+
 ///Sequence DP
 
 1. Redistribution : https://atcoder.jp/contests/abc178/tasks/abc178_d
