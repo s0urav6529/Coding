@@ -44,27 +44,37 @@ void sieve()
 }
 
 
-///seive with bitset
+///seive with bitset upto 1e8
 
-void seive(int N)
-{
-    vector<int>prime;
+// vector<unsigned int> primes;  ///for unsinged case
 
-    bitset<1000001>isprime;  ///it can take upto 10r7
+const int limit=100000005;  /// 1e8
+vector<ll> primes;
+bitset<limit+1>mark;
 
-    isprime.set();  ///set all the number
+void seive(){
 
-    for(int i=2;i*i<=N;i++)
-    {
-        if(isprime[i])
-        {
-            for(int j=i*i;j<=N;j+=i) isprime[j]=0; ///reset the number
+    mark.set();
+    mark[1] = false;
 
-            prime.push_back(i); ///push prime in vector
+    primes.pb(2);
+
+    for(ll i=4; i<limit;i+=2){
+        mark[i] = false;
+    }
+
+    for(ll i=3 ;i<limit ;i+=2){
+
+        if(mark[i] == true){
+
+            for(ll j=i*i ; j<limit ;j+=(i*2)){
+                 mark[j] = false;
+            }
+
+            primes.pb(i);
         }
     }
 
-    for(auto i:prime) cout<<i<<" ";
 }
 
 
