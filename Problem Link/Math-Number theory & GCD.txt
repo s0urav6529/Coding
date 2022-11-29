@@ -118,6 +118,8 @@ Done
 
 58. Count GCD : https://codeforces.com/contest/1750/problem/D                       ///GCD+ Inclusion Exclusion
 
+59. LCM from 1 to n : https://lightoj.com/problem/lcm-from-1-to-n                  /// LCM + extra unsigned work 
+
 
 Undone:
 GCD Extreme: https://www.spoj.com/problems/GCDEX/
