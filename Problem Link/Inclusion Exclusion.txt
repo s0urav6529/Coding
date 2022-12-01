@@ -12,3 +12,9 @@
 
 6. Count GCD : https://codeforces.com/contest/1750/problem/D
 
+7. Co Primes : https://algo.codemarshal.org/contests/icpc-dhaka-20-preli/problems/F
+
+8. LCM from 1 to n : https://lightoj.com/problem/lcm-from-1-to-n
+
+
+
