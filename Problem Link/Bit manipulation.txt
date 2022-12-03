@@ -125,4 +125,5 @@ Done:
 
 63. Binod : https://www.codechef.com/problems/BIN_OD
 
+64. Existence Of X : https://www.codechef.com/problems/EXISTENCEOFX?tab=statement
 
