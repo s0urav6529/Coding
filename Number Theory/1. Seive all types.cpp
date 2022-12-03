@@ -1,7 +1,7 @@
 ///seive with bool
 
 bool vis[limit];   /// limit upto 1e6
-vector<int>prime;
+vector<ll>prime;
 void seive(){
 	
     vis[0]=vis[1]=1;
