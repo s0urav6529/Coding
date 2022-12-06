@@ -120,6 +120,8 @@ Done
 
 59. LCM from 1 to n : https://lightoj.com/problem/lcm-from-1-to-n                  /// LCM + extra unsigned work 
 
+60. FACTDIV - Factorial and divisorss : https://www.spoj.com/problems/FACTDIV/en/
+
 
 Undone:
 GCD Extreme: https://www.spoj.com/problems/GCDEX/
