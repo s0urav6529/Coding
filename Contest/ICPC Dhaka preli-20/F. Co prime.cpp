@@ -1,5 +1,4 @@
 
-
 #include<bits/stdc++.h>
 using namespace std;
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
@@ -28,7 +27,7 @@ typedef long long int ll;
 //typedef unsigned long long int llu;
 //constexpr llu Mx=18446744073709551615;
 constexpr ll MOD=1000000007;
-const int limit=1e3+5;
+const int limit=1e6+5;
 
 
 bool vis[limit];
@@ -132,6 +131,5 @@ int main(){
     for(int t=1;t<=tc;t++) run_case(t);
     return 0;
 }
-
 
 
