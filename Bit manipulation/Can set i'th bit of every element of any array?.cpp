@@ -13,7 +13,7 @@
 
     for(int i=0;i<n;i++){
         
-        /// Since Xor operatio we need to find 0-1 or 1-0 combination to set i'th bit
+        /// Since Xor operation we need to find 0-1 or 1-0 combination to set i'th bit
         aa[i] =  a[i] & number;   
         bb[i] = ~b[i] & number;
 
