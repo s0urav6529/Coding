@@ -83,7 +83,11 @@ int main(){
             ll x,y,val;
             cin>>x>>y>>val;
 
-            a[x][y]+=val;   ///adding value
+            a[x][y]+=val;   ///Adding value
+            
+            ///Replace value
+            /// ll del = a[x][y];
+            /// update(x,y,-del); ///remove previous value
 
             update(x,y,val);
 
