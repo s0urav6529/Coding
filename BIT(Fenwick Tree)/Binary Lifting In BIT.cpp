@@ -1,7 +1,7 @@
 
 
 
-/// In this problem we need to find minimum Index where query wanted sum bigger.
+/// In this problem we need to find minimum Index where query wanted sum larger than prefix sum of this minimum index. 
 
 
 #include<bits/stdc++.h>
