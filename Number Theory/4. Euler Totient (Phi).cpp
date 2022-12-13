@@ -59,20 +59,23 @@ int main(){
 using namespace std;
 
 const int limit=1e7+5;
-int coprime[limit];
+
+/// for coprime & cummulative sum
+ll coprime[limit] , cum[limit];
 
 void Euler_totient() {
-    for (int i = 0; i <= limit; i++)
+
+    for (int i = 0; i < limit; i++){
         coprime[i] = i;
-
-    for (int i = 2; i <= limit; i++) {
-
+    }
+    cum[1] = 1;
+    for (int i = 2; i < limit; i++) {
         if (coprime[i] == i) {
-
-            for (int j = i; j <= limit; j += i){
+            for (int j = i; j < limit; j += i){
                 coprime[j] -= coprime[j] / i;
             }
         }
+        cum[i] = cum[i-1] + coprime[i];  /// cummulative sum
     }
 }
 int main(){
@@ -86,6 +89,7 @@ int main(){
         int n; cin >> n;
 
         cout<<coprime[n]<<endl;
+        cout<<cum[n]<<endl;
 
     }
     return 0;
