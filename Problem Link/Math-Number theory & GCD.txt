@@ -122,6 +122,10 @@ Done
 
 60. FACTDIV - Factorial and divisorss : https://www.spoj.com/problems/FACTDIV/en/
 
+61. 10791 - Minimum Sum LCM : https://onlinejudge.org/index.php? option=onlinejudge&Itemid=8&page=show_problem&category=0&problem=1732&mosmsg=Submission+received+with+ID+28093386
+
+62. 10820 - Send a Table : https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1761
+
 
 Undone:
 GCD Extreme: https://www.spoj.com/problems/GCDEX/
