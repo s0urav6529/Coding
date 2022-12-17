@@ -36,6 +36,8 @@ Done:
 
 14. Fibonacci Numbers :  https://cses.fi/problemset/task/1722                     /// DP + blog : https://codeforces.com/blog/entry/14516
 
+15 . Binary Strings are Fun : https://codeforces.com/contest/1762/problem/C
+
 Not Done:
 
 Maximum Subsequence Value: https://codeforces.com/problemset/problem/1365/E 
