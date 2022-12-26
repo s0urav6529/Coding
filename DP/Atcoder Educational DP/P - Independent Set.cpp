@@ -29,63 +29,97 @@ constexpr ll MOD=1000000007;
 const int limit=1e5+5;
 
 vector<int>adj[limit];
-ll dp[limit][2];
 
-ll dfs(int node,int par,int col){
+ll dp1[limit][2] , dp2[limit][2];
 
-    if(dp[node][col] != -1) return dp[node][col];
+ll dfs1(int node,int par ,int col){
 
-    ll ans = 0;
-    for(int child:adj[node]){
+
+    ll &ans = dp1[node][col];
+
+    if(ans != -1LL) return ans;
+
+    ans  = 1;
+
+    for(int child : adj[node]){
 
         if(child != par){
 
-            if(par == -1){
-                ans = ( ans % MOD + dfs(child,node,0) % MOD + dfs(child,node,1) % MOD ) % MOD;
-                ans = (ans % MOD + dfs(child,node,0)) % MOD;
-            }
-            else{
+            if(col == 0){
 
-                if(col == 0) ans = ( ans % MOD + dfs(child,node,0) % MOD + dfs(child,node,1) % MOD ) % MOD;
-                else ans = (ans % MOD + dfs(child,node,0) % MOD) % MOD;
+                ans = (ans * (dfs1(child,node,0) + dfs1(child,node,1)) % MOD ) % MOD;
+
+            }
+            else {
+                ans = (ans * dfs1(child,node,0)) % MOD;
             }
 
         }
+
     }
-    if(ans == 0) ans = 1;
-    return dp[node][col] = ans;
+
+    return ans;
+
 }
 
+ll dfs2(int node,int par ,int col){
 
-void an1nd1ta(int t){
+    ll &ans = dp2[node][col];
+
+    if(ans != -1LL) return ans;
+
+    ans  = 1;
+
+    for(int child : adj[node]){
+
+        if(child != par){
+
+            if(col == 0){
+
+                ans = (ans * (dfs2(child,node,0) + dfs2(child,node,1)) % MOD ) % MOD;
+
+            }
+            else {
+                ans = (ans * dfs2(child,node,0)) % MOD;
+            }
+
+        }
+
+    }
+
+    return ans;
+
+}
+
+void an1nd1ta(int tc){
 
     int n;
     cin >> n;
 
-    memset(dp,-1,sizeof dp);
+    memset(dp1,-1,sizeof dp1);
+    memset(dp2,-1,sizeof dp2);
 
     for(int i=1;i<n;i++){
-
-        int x,y;
-
-        cin >> x >> y;
+        int x , y;
+        cin >> x  >> y;
 
         adj[x].pb(y);
         adj[y].pb(x);
 
     }
 
-    cout << dfs(1,-1,0) <<endl;
+    ll ans1 = dfs1(1,-1,0); /// root node as a white node
+    ll ans2 = dfs2(1,-1,1); /// root node as a black node
 
-    //cout <<dp[1][0]<<endl
+    cout << (ans1 + ans2) % MOD <<endl;
 
     return;
 }
 
 int main(){
     fast;
-    int tc=1;
-   //cin >> tc;
-    for(int t=1;t<=tc;t++) an1nd1ta(t);
+    int testcase=1;
+    //cin >> testcase;
+    for(int T=1;T<=testcase;T++) an1nd1ta(T);
     return 0;
 }
