@@ -1,3 +1,10 @@
+
+
+/// We draw a line from the checking point to infinity
+/// Then check that how many times it intersect the polygon 
+/// If intersect odd times then it's inside the polygon otherwise outside the polygon
+/// If a point co-linear then it's on boundary
+
 ll orientation(ll x1 , ll y1 , ll x2 , ll y2 , ll x3 , ll y3){
  
     ll val = (x3-x2)*(y2-y1) - (x2-x1)*(y3-y2);
@@ -36,13 +43,15 @@ void an1nd1ta(int tc){
  
     int n , m;
     cin >> n >> m;
- 
+  
     vector<pair<ll,ll>>poly(n) , points(m);
- 
+    
+    /// poly for storing coordinate and points 
     for(int i=0;i<n;i++){
         cin >> poly[i].first >> poly[i].second;
     }
  
+    /// points for storing the checking point
     for(int i=0;i<m;i++){
         cin >> points[i].first >> points[i].second;
     }
@@ -60,20 +69,23 @@ void an1nd1ta(int tc){
  
             pair<ll,ll>a = poly[j];
             pair<ll,ll>b = poly[(j+1)%n];
- 
-            if(orientation(a.first , a.second , b.first , b.second , c.first , c.second) == 0 && on_segmant(a.first , a.second , b.first , b.second , c.first , c.second)){
+            
+            /// Boundary checking
+            if(orientation(a.first , a.second , b.first , b.second , c.first , c.second) == 0 &&
+               on_segmant(a.first , a.second , b.first , b.second , c.first , c.second)){
+               
                 boundary = true;
                 break;
             }
-            if(intersection(a,b,c,inf_point)){
+            if(intersection(a,b,c,inf_point)){   /// Intersection checking
                 intersect++;
             }
  
         }
  
         if(boundary) cout<<"BOUNDARY"<<endl;
-        else if(intersect&1) cout<<"INSIDE"<<endl;
-        else cout<<"OUTSIDE"<<endl;
+        else if(intersect&1) cout<<"INSIDE"<<endl;   /// Odd times so inside
+        else cout<<"OUTSIDE"<<endl;   /// Even times so outside
     }
     return;
 }
