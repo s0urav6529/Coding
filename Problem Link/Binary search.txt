@@ -21,4 +21,7 @@
 
 10. Quests : https://codeforces.com/contest/1760/problem/F
 
+11. Valiant's New Map : https://codeforces.com/contest/1731/problem/D
+
+
 
