@@ -127,3 +127,5 @@ Done:
 
 64. Existence Of X : https://www.codechef.com/problems/EXISTENCEOFX?tab=statement
 
+65. Even Subarrays : https://codeforces.com/contest/1731/problem/C
+
