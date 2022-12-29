@@ -18,6 +18,7 @@ int countdivisor(int n)   ///first pre-load the prime array using seive
             divisor*=cnt;
         }
     }
+    if(n>1) divisor*=2;
     return divisor;
 }
 
