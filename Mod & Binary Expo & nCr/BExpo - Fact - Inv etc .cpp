@@ -17,9 +17,9 @@ ll mulmod(ll a,ll b){
     return Mod(Mod(a)*Mod(b));
 }
 
-ll Binary_expo(ll a,ll p){
+ll bigmod(ll a,ll p){
 
- 	ll res=1;
+	ll res=1;
 	while(p){
 
 	    if(p & 1){
@@ -35,7 +35,7 @@ ll Binary_expo(ll a,ll p){
 //// ************** Modular Inverse *********** Time complexity O(log(n))
 	
 ll modular_inverse(ll base){
-     return Binary_expo(base,MOD-2);	/// base is the denominator
+     return bigmod(base,MOD-2);	/// base is the denominator
 }
 
 /// ************** Modular inverse in range ********* Time complexity O(n)
@@ -65,7 +65,7 @@ ll nCr(ll n,ll r){
     
     ll numerator= fact[n];
     ll denominator = mulmod(fact[r],fact[n-r]);
-    return mulmod(numerator, Binary_expo(denominator,MOD-2));
+    return mulmod(numerator, bigmod(denominator,MOD-2));
 	
 }
 
