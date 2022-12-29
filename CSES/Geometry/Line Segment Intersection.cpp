@@ -1,8 +1,8 @@
 
 #include<bits/stdc++.h>
-using ll=long long;
-using ld=long double;
+using namespace std;
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+typedef long long int ll;
 
 
 int orientation(ll x1,ll y1,ll x2,ll y2,ll x3,ll y3){
