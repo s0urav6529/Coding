@@ -18,7 +18,6 @@ ll mulmod(ll a,ll b){
 }
 
 ll bigmod(ll a,ll p){
-
 	ll res=1;
 	while(p){
 
