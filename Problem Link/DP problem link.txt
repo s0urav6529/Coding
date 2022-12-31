@@ -78,6 +78,8 @@ Done:
 
 38. Wavio Sequence : https://lightoj.com/problem/wavio-sequence
 
+39. 11584 - Partitioning by Palindromes : https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2631
+
 
 
 ///Sequence DP
