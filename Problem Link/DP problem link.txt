@@ -80,6 +80,7 @@ Done:
 
 39. 11584 - Partitioning by Palindromes : https://onlinejudge.org/index.php?option=com_onlinejudge&Itemid=8&page=show_problem&problem=2631
 
+40. 10003 - Cutting Sticks : https://onlinejudge.org/index.php?  option=com_onlinejudge&Itemid=8&page=show_problem&category=0&problem=944&mosmsg=Submission+received+with+ID+28135176
 
 
 ///Sequence DP
