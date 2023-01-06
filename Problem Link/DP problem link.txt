@@ -82,6 +82,10 @@ Done:
 
 40. 10003 - Cutting Sticks : https://onlinejudge.org/index.php?  option=com_onlinejudge&Itemid=8&page=show_problem&category=0&problem=944&mosmsg=Submission+received+with+ID+28135176
 
+41. Longest Flight Route : https://cses.fi/problemset/task/1680
+
+42. Game Routes : https://cses.fi/problemset/task/1681
+
 
 ///Sequence DP
 
