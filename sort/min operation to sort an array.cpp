@@ -41,7 +41,7 @@ void an1nd1ta(int tc){
     for(int i=1;i<=n;i++) {
 
         cin >> a[i];
-        adj[i].pb(a[i]);
+        adj[i].pb(a[i]); /// index to value edges
 
     }
 
