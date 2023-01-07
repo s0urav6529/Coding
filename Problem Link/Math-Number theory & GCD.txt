@@ -126,6 +126,8 @@ Done
 
 62. 10820 - Send a Table : https://onlinejudge.org/index.php?option=onlinejudge&Itemid=8&page=show_problem&problem=1761
 
+63. Happy New Year 2023 : https://atcoder.jp/contests/abc284/tasks/abc284_d
+
 
 Undone:
 GCD Extreme: https://www.spoj.com/problems/GCDEX/
