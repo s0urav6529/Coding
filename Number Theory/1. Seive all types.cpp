@@ -1,6 +1,7 @@
 ///seive with bool
 
-bool vis[limit];   /// limit upto 1e6
+ /// limit upto 1e8
+bool vis[limit];  
 vector<ll>prime;
 void seive(){
 	
@@ -63,7 +64,7 @@ void seive(){
         mark[i] = false;
     }
 
-    for(ll i=3 ;i<limit ;i+=2){
+    for(ll i=3 ;i*i<limit ;i+=2){
 
         if(mark[i] == true){
 
