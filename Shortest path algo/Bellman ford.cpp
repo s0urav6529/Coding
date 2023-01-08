@@ -1,75 +1,89 @@
 #include<bits/stdc++.h>
-using namespace std;
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+using namespace std;
 
-const int limit=1005;
+typedef long long int ll;
+typedef unsigned long long int llu;
+constexpr ll mod=1e9+7;
+const int limit=2505;
 
 struct edges{
-    int src,des,w;
+    int src,des;
+    ll w;
 };
 
 int main(){
     fast;
-    int n,e;
-    cin>>n>>e;
+    int n,m;
+    cin >> n >> m;
 
-    vector<edges>adj(e);
-    vector<int>Parent(n+1,-1),dis(n+1,1e9);
+    vector<edges> adj(m);
+    vector<int> Parent(n+1,-1);
+    vector<ll> dis(n+1,1e15);
 
-    for(int i=0;i<e;i++){
+    for(int i=0;i<m;i++){
 
-        int a,b,w;
-        cin>>a>>b>>w;
-        adj[i].src=a;
-        adj[i].des=b;
-        adj[i].w=w;
+        int a, b;
+        ll  c;
+        cin >> a >> b >> c;
+        adj[i].src = a;
+        adj[i].des = b;
+        adj[i].w = c;
 
     }
 
-    dis[1]=0;
-    bool isupdated=false;
+    dis[1] = 0;
+    int neg_node = -1;
 
-    for(int i=1;i<n;i++){  /// updating n-1 times
+    for(int i=1;i<=n;i++){
 
-        isupdated=false;
+        neg_node = -1;
 
-        for(int j=0;j<e;j++){
+        for(int j=0;j<m;j++){
 
-            int src=adj[j].src;
-            int des=adj[j].des;
-            int w=adj[j].w;
+            int src = adj[j].src;
+            int des = adj[j].des;
+            ll w = adj[j].w;
 
-            if(dis[src]!=1e9 && dis[src]+w<dis[des]){
+            if(dis[src] + w < dis[des]){
 
-                isupdated=true;
-                dis[des]=dis[src]+w;
-                Parent[des]=src;
+                neg_node = des;
+                dis[des] = dis[src] + w;
+                Parent[des] = src;
             }
         }
-        if(isupdated==false) break;
     }
+    
+    
+    
+    
+    if(neg_node == -1){  /// since updated node is not found during n'th or n-1,n-2... iteration. so no negative cycle is found
+        cout<< "NO"<<endl;
+    }
+    else{   ///negative cycle found & print any negative cycle 
+        
+        for(int i = 1 ; i <= n; i++){
+            neg_node = Parent[neg_node];
+        }
 
+        vector<int>cycle;
 
-    ///one more relaxation for detect cycle
+        for(int i = neg_node ;; i = Parent[i] ){
 
-    isupdated=true;
+            cycle.push_back(i);
 
-    for(int j=0;j<e;j++){
-
-        int src=adj[j].src;
-        int des=adj[j].des;
-        int w=adj[j].w;
-
-        if(dis[src]!=1e9 && dis[src]+w<dis[des]){
-
-            ///negative edge cycle
-            cout<<"This graph has -ve edge cycle"<<endl;
-            return 0;
+            if(i == neg_node && cycle.size() > 1) break;
 
         }
-    }
 
-    for(int i=1;i<=n;i++) cout<<dis[i]<<" ";
-    cout<<endl;
+        reverse(cycle.begin(),cycle.end());
+        cout<<"YES"<<endl;
+        for(int i = 0; i < cycle.size(); i++){
+            cout<< cycle[i] <<" ";
+        }
+        cout<<endl;
+
+    }
     return 0;
 }
+
