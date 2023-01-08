@@ -1,3 +1,6 @@
+
+/// https://cp-algorithms.com/graph/finding-negative-cycle-in-graph.html
+
 #include<bits/stdc++.h>
 #define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
 using namespace std;
