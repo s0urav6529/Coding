@@ -49,7 +49,6 @@ void sieve()
 
 // vector<unsigned int> primes;  ///for unsinged case
 
-const int limit=100000005;  /// 1e8
 vector<ll> primes;
 bitset<limit+1>mark;
 
@@ -60,18 +59,17 @@ void seive(){
 
     primes.pb(2);
 
-    for(ll i=4; i<limit;i+=2){
+    for(ll i = 4; i < limit; i += 2){
         mark[i] = false;
     }
 
-    for(ll i=3 ;i*i<limit ;i+=2){
+    for(ll i = 3 ; i*i < limit ; i += 2){
 
         if(mark[i] == true){
 
-            for(ll j=i*i ; j<limit ;j+=(i*2)){
+            for(ll j = i*i ; j < limit ;j += (i*2LL)){
                  mark[j] = false;
             }
-
             primes.pb(i);
         }
     }
