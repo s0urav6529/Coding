@@ -1,11 +1,4 @@
-#include<bits/stdc++.h>
-using namespace std;
-#define fast ios::sync_with_stdio(0);cin.tie(0);cout.tie(0);
-
-typedef long long int ll;
-const int limit=1e5+5;
 #define MaxN 17
-
 int n;
 vector<int>adj[limit];
 int LCA[MaxN+5][limit];
