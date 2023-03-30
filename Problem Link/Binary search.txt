@@ -23,5 +23,7 @@
 
 11. Valiant's New Map : https://codeforces.com/contest/1731/problem/D
 
+12. Rotate to Minimum : https://www.codechef.com/problems/ROTMIN
+
 
 
