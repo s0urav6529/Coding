@@ -128,6 +128,8 @@ Done
 
 63. Happy New Year 2023 : https://atcoder.jp/contests/abc284/tasks/abc284_d
 
+65. AABCC : https://atcoder.jp/contests/abc300/tasks/abc300_d
+
 
 Undone:
 GCD Extreme: https://www.spoj.com/problems/GCDEX/
