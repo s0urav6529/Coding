@@ -25,5 +25,7 @@
 
 12. Rotate to Minimum : https://www.codechef.com/problems/ROTMIN
 
+13. Dividing into Groups : https://www.codechef.com/problems/DIVIDE_GROUP?tab=statement
+
 
 
