@@ -133,3 +133,5 @@ Done:
 
 67. Maximum And Or : https://www.codechef.com/problems/MAXANDOR?tab=statement
 
+68. NASA : https://www.codechef.com/problems/PALIXOR
+
