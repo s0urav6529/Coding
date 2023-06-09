@@ -86,6 +86,8 @@ Done:
 
 42. Game Routes : https://cses.fi/problemset/task/1681
 
+43. Greedy : https://www.codechef.com/problems/LASTRBS                               /// assign +/- to every element such that array sum becomes zero (DP)
+
 
 ///Sequence DP
 
