@@ -62,3 +62,7 @@ Done
 29. Copil Copac Draws Trees : https://codeforces.com/contest/1831/problem/C
 
 30. Thank U, Next : https://www.codechef.com/problems/MAIL_DELIVER?tab=statement          /// Multisource bfs or Multisource Dijkstra
+
+31.  Art Gallery on Graph : https://atcoder.jp/contests/abc305/tasks/abc305_e               /// Multisource bfs or Multisource Dijkstra
+
+
