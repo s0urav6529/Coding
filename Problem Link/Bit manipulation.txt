@@ -135,3 +135,7 @@ Done:
 
 68. NASA : https://www.codechef.com/problems/PALIXOR
 
+69. Special Operation : https://www.codechef.com/problems/GRDXOR
+
+70. Possible or Not : https://www.codechef.com/problems/CS2023_PON
+
