@@ -14,19 +14,22 @@ int Find(int a){
 
     if(Parent[a]<0) return a;
 
-    return Parent[a]=Find(Parent[a]);
+    return Parent[a] = Find(Parent[a]);
 
 }
 
 void Union(int a,int b){
 
     a=Find(a);
+    
     b=Find(b);
 
-    if(a!=b){
+    if(a != b){
 
         if(Rank[b]>Rank[a]) swap(a,b);
+        
         Parent[b]=a;
+        
         Rank[a]+=Rank[b];
     }
 }
@@ -34,7 +37,7 @@ void Union(int a,int b){
 void solution(){
 
     int n,m;
-    cin>>n>>m;
+    cin >> n >> m;
 //    vector<pair<int,pair<int,int>>>tree(n-1);
 //
 //    for(int i=0;i<n-1;i++){
@@ -49,7 +52,7 @@ void solution(){
 //    }
     while(m--){
         int a,b;
-        cin>>a>>b;
+        cin >> a >> b;
         Union(a,b);
     }
 
