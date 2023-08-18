@@ -8,7 +8,7 @@ using ll=long long;
 const int limit=200001;
 
 vector<int>Parent(limit,-1);
-vector<int>Rank(limit,1); ///Rank means size of this cc
+vector<int>Rank(limit,1); ///Rank means size of this conected componemt
 
 int Find(int a){
 
