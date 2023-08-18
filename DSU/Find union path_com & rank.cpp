@@ -10,28 +10,31 @@ const int limit=200001;
 vector<int>Parent(limit,-1);
 vector<int>Rank(limit,1); ///Rank means size of this conected componemt
 
-int Find(int a){
+int Find(int node){
 
-    if(Parent[a]<0) return a;
+    if(Parent[node] < 0) return node;
 
-    return Parent[a] = Find(Parent[a]);
+    return Parent[node] = Find(Parent[node]);
 
 }
 
-void Union(int a,int b){
+void Union(int u, int v, int w){
 
-    a=Find(a);
-    
-    b=Find(b);
+    u = Find(u);
 
-    if(a != b){
+    v = Find(v);
 
-        if(Rank[b]>Rank[a]) swap(a,b);
+    if(u != v){
+
+        if(Rank[v] > Rank[u]) swap(u,v);
+
+        Parent[v] = u;
         
-        Parent[b]=a;
-        
-        Rank[a]+=Rank[b];
+        Rank[u] += Rank[v];
+
+        cost += w;
     }
+
 }
 
 void solution(){
