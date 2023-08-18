@@ -57,12 +57,8 @@ void solution(){
 }
 int main()
 {
-    fast;
-    //read;
-    //out;
-    int tc=1;
-    //cin>>tc;
-    while(tc--) solution();
+    fast; 
+    solution();
     return 0;
 }
 
